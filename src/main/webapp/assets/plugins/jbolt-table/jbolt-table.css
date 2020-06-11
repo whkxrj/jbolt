@@ -1,0 +1,551 @@
+@charset "UTF-8";
+/********jbolt_table_js_version="0.2.9"*********/
+.jbolt_table_view{
+	position: relative;
+	display: block;
+	border:1px solid #eeeeee;
+	border-right:none;
+	/* resize:  both; */
+	overflow: hidden;
+}
+.jbolt_table_box{
+	position: relative;
+	display: block;
+    overflow: hidden;
+}
+.jbolt_table_loading{
+	display:none;
+	position: absolute;
+	z-index:9999;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	width: 100%;
+	vertical-align:middle;
+	text-align:center;
+}
+.jbolt_table_loading .loading_msg{
+	font-size:18px;
+	position: absolute;
+	width:300px;
+	height:40px;
+	line-height:40px;
+	left:50%;
+	top:50%;
+	margin-top:-20px;
+	margin-left:-150px;
+	text-align:center;
+	background-color:rgba(0,0,0,0.1); 
+	border-radius:6px;
+}
+.jbolt_table_box.fixedHeader{
+	border-right:1px solid #eeeeee;
+}
+.jbolt_table_fixed_hide{
+	display: none;
+}
+.jbolt_table_box.fixedHeader table.jbolt_table tbody>tr:nth-child(1)>td{
+	border-top:none;
+}
+
+.jbolt_table_box .jbolt_table_header{
+	width:100%;
+	background-color: rgba(0,0,0,.05);
+	overflow: hidden;
+	border-bottom:1px solid #eeeeee;
+}
+.jbolt_table_box .jbolt_table_header table thead>tr>th{
+	border-bottom:none;
+}
+.jbolt_table_box .jbolt_table_header>table>thead>tr>th:nth-last-child(1){
+	border-right:1px solid #eeeeee;
+}
+
+.jbolt_table_body{
+	overflow:auto;
+    position:relative;
+	padding:0px;
+	left:0px;
+	right:0px;
+	top:0px;
+	width:100%;
+	border-top:none;
+	background-color: #FFFFFF;
+}
+table{
+	width: 100%;
+}
+table.jbolt_table{
+	margin-bottom: 0px;
+	width: auto;
+	position: relative;
+	background-color: #FFFFFF; 
+}
+table.jbolt_tree_table thead>tr,
+table.jbolt_tree_table tfoot>tr,
+table.jbolt_table thead>tr,
+table.jbolt_table tfoot>tr{
+	background-color: #f5F5F5;
+}
+table.jbolt_tree_table>tbody>tr[data-parent]{
+	background-color: #f5f5f5;
+}
+table.jbolt_tree_table>tbody>tr[data-parent][data-son]{
+	background-color: #f8f8f8;
+}
+
+
+table.jbolt_table thead>tr>th,
+table.jbolt_table tfoot>tr>th,
+table.jbolt_table tbody>tr>td{
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+min-width:60px;
+border:1px solid #eeeeee;
+}
+table.jbolt_table thead>tr>th,
+table.jbolt_table tfoot>tr>th{
+	padding:5px 15px;
+	height: 30px;
+	line-height: 30px;
+}
+table.thead_font_normal>thead>tr>th,
+table.thead_font_normal>thead>tr>td,
+table.thfoot_font_normal>tfoot>tr>th,
+table.thfoot_font_normal>tfoot>tr>td{
+	font-weight:normal!important;
+}
+table.jbolt_table tr{
+	transition:.3s;
+	-webkit-transition:.3s;
+	-moz-transition:.3s;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+}
+table.jbolt_table.table_hover tbody>tr:nth-child(even),
+table.jbolt_table.table_hover_even tbody>tr:nth-child(even),
+table.jbolt_table.table_hover_odd tbody>tr:nth-child(odd),
+table.jbolt_table.table_striped tbody>tr:nth-child(even),
+table.jbolt_table.table_striped_even tbody>tr:nth-child(even),
+table.jbolt_table.table_striped_odd tbody>tr:nth-child(odd),
+table.jbolt_table tbody>tr.hover{
+	background-color: #f5f5f5;
+}
+table.jbolt_table tbody>tr>td{
+	padding:5px 15px;
+	height: 28px;
+    line-height: 28px;
+}
+table.jbolt_table.tbody_lh20 tbody>tr>td{
+	line-height: 20px;
+}
+table.jbolt_table thead>tr:nth-child(1)>th{
+	border-top:none!important;
+}
+table.jbolt_table thead>tr>th:nth-child(1){
+	border-left:none!important;
+}
+table.jbolt_table.novscroll thead>tr>th:nth-last-child(1){
+	border-right:none!important;
+}
+
+table.jbolt_table tbody>tr:nth-last-child(1)>td{
+	border-bottom:none!important;
+}
+table[data-height="fill"].jbolt_table.novscroll tbody>tr:nth-last-child(1)>td{
+	border-bottom:1px solid #eeeeee!important;
+}
+table[data-height]:not([data-height="fill"]).jbolt_table.novscroll tbody>tr:nth-last-child(1)>td{
+	border-bottom:1px solid #eeeeee!important;
+}
+table.jbolt_table.novscroll.col_last_need_border_right.active thead>tr>th:nth-last-child(1){
+	border-right:1px solid #eeeeee!important;
+}
+table.jbolt_table.novscroll.col_last_need_border_right.active tbody>tr>td:nth-last-child(1){
+	border-right:1px solid #eeeeee!important;
+}
+table[data-height]:not([data-height="fill"]).jbolt_table tbody>tr:nth-last-child(1)>td{
+	border-bottom:none!important;
+}
+table.jbolt_table.novscroll.noBottomBorder tbody>tr:nth-last-child(1)>td{
+	border-bottom:none!important;
+}
+table[data-max-height].jbolt_table.novscroll tbody>tr:nth-last-child(1)>td{
+}
+table.jbolt_table.novscroll tbody>tr>td:nth-last-child(1){
+	border-right:none!important;
+}
+table[data-width="auto"].jbolt_table.novscroll thead>tr>th:nth-last-child(1),
+table[data-width="auto"].jbolt_table.novscroll tbody>tr>td:nth-last-child(1){
+	border-right:1px solid #eeeeee!important;
+}
+table[data-width="auto"].jbolt_table.novscroll thead>tr>th:nth-last-child(1),
+table[data-width="auto"].jbolt_table.novscroll tbody>tr>td:nth-last-child(1){
+	border-right:none!important;
+}
+/* .jbolt_table_fixed.jbolt_table_fixed_right table[data-width].jbolt_table.novscroll thead>tr>th:nth-last-child(1),
+.jbolt_table_fixed.jbolt_table_fixed_right table[data-width].jbolt_table.novscroll tbody>tr>td:nth-last-child(1){
+	border-right:1px solid #FFFFFF!important;
+} */
+table.jbolt_table tbody>tr>td:nth-child(1){
+	border-left:none!important;
+}
+
+table.jbolt_tree_table tbody tr[data-son]{
+	display: none;
+}
+table.jbolt_tree_table>tbody>tr{
+	transition:.3s;
+	-webkit-transition:.3s;
+	-moz-transition:.3s;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+}
+
+table.jbolt_tree_table tbody tr[data-parent]{
+}
+table.jbolt_tree_table tbody tr>td[data-parent-td]{
+	cursor: pointer;
+}
+table.jbolt_tree_table tbody tr>td[data-parent-td]>i.fa.parent_flag{
+	font-size:18px!important;
+	margin-top: 2px;
+	float: right;
+	transition:.3s;
+	-webkit-transition:.3s;
+	-moz-transition:.3s;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+}
+table.jbolt_tree_table tbody tr>td[data-parent-td].expand>i.fa.parent_flag{
+		transform:rotate(180deg);
+-ms-transform:rotate(180deg); 	/* IE 9 */
+-moz-transform:rotate(180deg); 	/* Firefox */
+-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+-o-transform:rotate(180deg); 	/* Opera */
+}
+.jbolt_table_body::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+}
+
+.jbolt_table_body::-webkit-scrollbar-track, .jbolt_table_body::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	border: 3px solid transparent;
+}
+.jbolt_table_body::-webkit-scrollbar-track:hover , .jbolt_table_body::-webkit-scrollbar-thumb:hover {
+	border-radius: 0px;
+	border: 3px solid transparent;
+}
+
+
+.jbolt_table_body::-webkit-scrollbar-track {
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1) inset;
+}
+
+.jbolt_table_body::-webkit-scrollbar-thumb {
+	min-height: 20px;
+	background-clip: content-box;
+	box-shadow: 0 0 0 5px rgba(0, 0, 0, .1) inset;
+}
+
+.jbolt_table_body::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+
+.jbolt_table_fixed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+.jbolt_table_fixed .jbolt_table_header{
+	padding-right: 0px!important;
+	position: relative;
+	overflow: visible;
+}
+.jbolt_table_fixed .jbolt_table_header>table{
+	width: 100%!important;
+}
+.jbolt_table_fixed .jbolt_table_body{
+	overflow: hidden;
+}
+.jbolt_table_fixed_left {
+    box-shadow: 0 -1px 8px rgba(0,0,0,.08);
+}
+.jbolt_table_fixed_right_mend{
+	background-color: #f5f5f5;
+	display:inline-block;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	right:-16px;
+}
+
+.jbolt_table_fixed_right {
+    left: auto;
+    right: -1px;
+    border-width: 0 0 0 1px;
+    box-shadow: -1px 0 8px rgba(0,0,0,.08);
+	border-left:1px solid #eeeeee;
+}
+
+.jbolt_table_pages{
+	background-color: #FFFFFF;
+	text-align: left;
+	padding: 5px;
+	border-top:1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;  
+}
+.jbolt_table_pages .pages{
+	margin-top:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+.jbolt_table_col_sort{
+	display: inline-block;
+	position:relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 10px;
+    height: 20px;
+    margin-left: 5px;
+}
+.jbolt_table_col_sort>i.sort{
+	position:absolute;
+	display:inline-block;
+	width:0;
+    height:0;
+	cursor: pointer!important;
+	vertical-align: middle;
+	left:5px;
+}
+.jbolt_table_col_sort>i.sort.sort_asc:hover{
+	border-bottom-color:#666;
+}
+.jbolt_table_col_sort>i.sort.sort_desc:hover{
+	border-top-color:#666;
+}
+.jbolt_table_col_sort>i.sort.sort_asc.active{
+	border-bottom-color:#000000;
+}
+.jbolt_table_col_sort>i.sort.sort_desc.active{
+	border-top-color:#000000;
+}
+.jbolt_table_col_sort>i.sort.sort_asc{
+	border-right:5px solid transparent;
+	border-left:5px solid transparent;
+	border-bottom:5px solid #c3c3c3;
+	top:4px;
+}
+.jbolt_table_col_sort>i.sort.sort_desc{
+	border-right:5px solid transparent;
+	border-left:5px solid transparent;
+	border-top:5px solid #c3c3c3;
+	bottom:4px;
+}
+
+.jbolt_table_toolbar{
+	display:block;
+	background-color: #f5f5f5;
+	border-bottom:1px solid #eeeeee;
+	padding: 10px 15px;
+	line-height:30px;
+	border-right:1px solid #eeeeee;
+}
+
+.jbolt_table_checkbox{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	line-height: 20px;
+	cursor: pointer;
+	color:white;
+}
+ 
+.jbolt_table_checkbox input[type='checkbox']{
+	position:absolute;
+	width: 18px;
+	height: 18px;
+	opacity: 0;
+	z-index: 1;
+	left:0;
+	cursor: pointer;
+    font-weight: normal;
+    outline: 0;
+    color:white;
+}
+.jbolt_table_checkbox span{
+	position:relative;
+	text-align:center;
+	display:block;
+	width: 18px;
+	height: 18px;
+	left:0;
+	border:1px solid #DDD;
+	background-color: #FFFFFF;
+	border-radius: 2px;
+	color:white;
+}
+.jbolt_table_checkbox span>i.fa{
+	display:block;
+	width: 18px;
+	height: 18px;
+	opacity: 0;
+	color:white;
+    font-size: 12px;
+    line-height: 18px;
+}
+.jbolt_table_checkbox.checked span{
+	background-color: #007bff;
+	border-color: #0871e2;
+}
+.jbolt_table_checkbox.checked span>i.fa{
+	opacity: 1;
+   
+}
+
+
+
+.jbolttable_master_slave_box{
+	display: flex;
+	width:100%;
+	height:100%;
+	flex-direction:column;
+	border:1px solid #eeeeee;
+}
+.jbolttable_master_slave_box .jbolt_table_view{
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	height: 100%!important;
+	min-height: 100%!important;
+	max-height: 100%!important;
+}
+.jbolttable_master_slave_box  .jbolt_table_pages,
+.jbolttable_master_slave_box .jbolt_table_toolbar,
+.jbolttable_master_slave_box  .jbolt_table_box.fixedHeader{
+	border-right:none!important;
+}
+.jbolttable_master_slave_box .jbolt_table_toolbar{
+	padding: 0px 10px;
+	height: 44px;
+	line-height: 44px;
+}
+ 
+.jbolttable_master_slave_box  .jbolt_tab_view .jbolt_tab_links{
+	padding-left: 15px;
+	background-color: #F5F5F5;
+    border-top: 1px solid #DDD;
+      height: 35px;
+    line-height: 35px;
+}
+.jbolttable_master_slave_box .jbolt_tab_links .jbolt_tab_link{
+	    border-top: none;
+    border-radius: 0px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #F5F5F5;
+}
+.jbolttable_master_slave_box .jbolt_tab_links .jbolt_tab_link.active{
+	  background-color: #FFF;
+}
+.jbolttable_master_slave_box .split{
+	width: 100%;
+	height:100%;
+	background-color:#FFFFFF;
+	overflow: hidden;
+}
+.jbolttable_master_slave_box .split.master{
+	overflow: auto;
+}
+.jbolttable_master_slave_box .jbolt_tab_view{
+	height: 100%;
+}
+.jbolttable_master_slave_box .jbolt_tab_view .jbolt_tab_contents{
+	padding-top:5px;
+	height: calc(100% - 44px);
+	height: -webkit-calc(100% - 44px);
+	overflow: hidden;
+}
+.jbolttable_master_slave_box .jbolt_tab_view .jbolt_tab_contents .jbolt_tab_content{
+	height:100%;
+	overflow: auto;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	padding: 0px 0px 0px 0px;
+}
+.jbolttable_master_slave_box .gutter.gutter-vertical{
+	background-color:#EEE;
+	cursor: s-resize;
+	border-top:1px solid #eeeeee;
+	border-bottom:1px solid #eeeeee;
+	margin-bottom:5px; 
+}
+.jbolttable_master_slave_box .split.master .jbolt_main_table>tbody>tr.active{
+	background-color: rgba(200,230,255,1);
+	color: #1b00ff!important; 
+}
+
+.jbolt_table_fill_box .jbolt_table_view{
+	height: 100%!important;
+	min-height: 100%!important;
+	max-height: 100%!important;
+}
+.jbolt_table_fill_box [data-ajaxportal]{
+	height: 100%!important;
+	min-height: 100%!important;
+	max-height: 100%!important;
+}
+.jbolt_table_fill_box [data-ajaxportal] .jbolt_ajaxportal_content{
+	height: 100%!important;
+	min-height: 100%!important;
+	max-height: 100%!important;
+}
+.jbolt_table_view.border-dark,
+.jbolt_table_toolbar.border-dark,
+.jbolt_table_body.border-dark,
+.jbolt_table_box.fixedHeader.border-dark,
+.border-dark table>thead>tr>th,
+.jbolt_table_box.fixedHeader.border-dark .jbolt_table_header,
+.border-dark table[data-height="fill"].jbolt_table.novscroll tbody>tr:nth-last-child(1)>td,
+.border-dark table>tbody>tr>td{
+	border-color:#333!important;
+}
+.border-dark .jbolt_table_pages{
+	border-right:1px solid #333!important;
+}
+ 
+
+.jbolt_table_view.border-secondary,
+.jbolt_table_toolbar.border-secondary,
+.jbolt_table_body.border-secondary,
+.jbolt_table_box.fixedHeader.border-secondary,
+.border-secondary table>thead>tr>th,
+.jbolt_table_box.fixedHeader.border-secondary .jbolt_table_header,
+.border-secondary table[data-height="fill"].jbolt_table.novscroll tbody>tr:nth-last-child(1)>td,
+.border-secondary table>tbody>tr>td{
+	border-color:#6c757d!important;
+}
+.border-secondary .jbolt_table_pages{
+	border-right:1px solid #6c757d!important;
+}
+ 
+
+.jbolt_table_view.border-gray,
+.jbolt_table_toolbar.border-gray,
+.jbolt_table_body.border-gray,
+.jbolt_table_box.fixedHeader.border-gray,
+.border-gray table>thead>tr>th,
+.jbolt_table_box.fixedHeader.border-gray .jbolt_table_header,
+.border-gray table[data-height="fill"].jbolt_table.novscroll tbody>tr:nth-last-child(1)>td,
+.border-gray table>tbody>tr>td{
+	border-color:#ccc!important;
+}
+.border-gray .jbolt_table_pages{
+	border-right:1px solid #ccc!important;
+}

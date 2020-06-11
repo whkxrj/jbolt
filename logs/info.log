@@ -1,0 +1,30 @@
+[2020-06-11 10:51:20.833] INFO  (com.alibaba.druid.pool.DruidDataSource.java:1003) init - {dataSource-1} inited
+[2020-06-11 10:51:20.841] INFO  (com.alibaba.druid.pool.DruidDataSourceStatLoggerImpl.java:77) log - {"url":"jdbc:mysql://localhost:3306/jbolt_demo?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT&allowPublicKeyRetrieval=true","dbType":"mysql","name":"DataSource-417797183","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2020-06-11 10:51:20","connectCount":0,"closeCount":0,"physicalConnectCount":1,"sqlList":[{"sql":"set names utf8mb4","executeCount":1,"executeMillisMax":6,"executeMillisTotal":6,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[0,1],"concurrentMax":1}]}
+[2020-06-11 10:51:21.851] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:38) exe - JBolt自动升级：开始执行
+[2020-06-11 10:51:21.852] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:40) exe - JBolt自动升级：执行完成
+[2020-06-11 10:51:22.027] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:192) configAllEnable - 开始启动公众平台配置... start
+[2020-06-11 10:51:22.035] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:201) configAllEnable - 所有公众平台启动完成... finish
+[2020-06-11 11:18:43.356] INFO  (com.alibaba.druid.pool.DruidDataSource.java:1003) init - {dataSource-1} inited
+[2020-06-11 11:18:43.361] INFO  (com.alibaba.druid.pool.DruidDataSourceStatLoggerImpl.java:77) log - {"url":"jdbc:mysql://localhost:3306/jbolt_demo?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT&allowPublicKeyRetrieval=true","dbType":"mysql","name":"DataSource-1360541835","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2020-06-11 11:18:43","connectCount":0,"closeCount":0,"physicalConnectCount":1,"sqlList":[{"sql":"set names utf8mb4","executeCount":1,"executeMillisMax":5,"executeMillisTotal":5,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[0,1],"concurrentMax":1}]}
+[2020-06-11 11:18:44.021] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:38) exe - JBolt自动升级：开始执行
+[2020-06-11 11:18:44.021] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:40) exe - JBolt自动升级：执行完成
+[2020-06-11 11:18:44.227] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:192) configAllEnable - 开始启动公众平台配置... start
+[2020-06-11 11:18:44.233] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:201) configAllEnable - 所有公众平台启动完成... finish
+[2020-06-11 15:10:13.111] INFO  (com.alibaba.druid.pool.DruidDataSource.java:1003) init - {dataSource-1} inited
+[2020-06-11 15:10:13.119] INFO  (com.alibaba.druid.pool.DruidDataSourceStatLoggerImpl.java:77) log - {"url":"jdbc:mysql://localhost:3306/jbolt_demo?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT&allowPublicKeyRetrieval=true","dbType":"mysql","name":"DataSource-1360541835","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2020-06-11 15:10:13","connectCount":0,"closeCount":0,"physicalConnectCount":1,"sqlList":[{"sql":"set names utf8mb4","executeCount":1,"executeMillisMax":7,"executeMillisTotal":7,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[0,1],"concurrentMax":1}]}
+[2020-06-11 15:10:13.988] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:38) exe - JBolt自动升级：开始执行
+[2020-06-11 15:10:13.988] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:40) exe - JBolt自动升级：执行完成
+[2020-06-11 15:10:14.152] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:192) configAllEnable - 开始启动公众平台配置... start
+[2020-06-11 15:10:14.157] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:201) configAllEnable - 所有公众平台启动完成... finish
+[2020-06-11 15:15:01.361] INFO  (com.alibaba.druid.pool.DruidDataSource.java:1003) init - {dataSource-1} inited
+[2020-06-11 15:15:01.367] INFO  (com.alibaba.druid.pool.DruidDataSourceStatLoggerImpl.java:77) log - {"url":"jdbc:mysql://localhost:3306/jbolt_demo?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT&allowPublicKeyRetrieval=true","dbType":"mysql","name":"DataSource-363397863","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2020-06-11 15:15:01","connectCount":0,"closeCount":0,"physicalConnectCount":1,"sqlList":[{"sql":"set names utf8mb4","executeCount":1,"executeMillisMax":4,"executeMillisTotal":4,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[0,1],"concurrentMax":1}]}
+[2020-06-11 15:15:02.090] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:38) exe - JBolt自动升级：开始执行
+[2020-06-11 15:15:02.090] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:40) exe - JBolt自动升级：执行完成
+[2020-06-11 15:15:02.234] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:192) configAllEnable - 开始启动公众平台配置... start
+[2020-06-11 15:15:02.237] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:201) configAllEnable - 所有公众平台启动完成... finish
+[2020-06-11 15:16:12.813] INFO  (com.alibaba.druid.pool.DruidDataSource.java:1003) init - {dataSource-1} inited
+[2020-06-11 15:16:12.820] INFO  (com.alibaba.druid.pool.DruidDataSourceStatLoggerImpl.java:77) log - {"url":"jdbc:mysql://localhost:3306/jbolt_demo?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT&allowPublicKeyRetrieval=true","dbType":"mysql","name":"DataSource-363397863","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2020-06-11 15:16:12","connectCount":0,"closeCount":0,"physicalConnectCount":1,"sqlList":[{"sql":"set names utf8mb4","executeCount":1,"executeMillisMax":5,"executeMillisTotal":5,"executeHistogram":[0,1],"executeAndResultHoldHistogram":[0,1],"concurrentMax":1}]}
+[2020-06-11 15:16:13.449] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:38) exe - JBolt自动升级：开始执行
+[2020-06-11 15:16:13.449] INFO  (cn.jbolt.common.config.JBoltAutoUpgrade.java:40) exe - JBolt自动升级：执行完成
+[2020-06-11 15:16:13.559] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:192) configAllEnable - 开始启动公众平台配置... start
+[2020-06-11 15:16:13.562] INFO  (cn.jbolt.admin.wechat.config.WechatConfigService.java:201) configAllEnable - 所有公众平台启动完成... finish

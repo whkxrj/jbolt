@@ -1,0 +1,87 @@
+#@adminLayout()
+#define main()
+###这里因为是进入二级内页  data-dontchangeleftnav="true" 保持左侧选中导航不变
+<div class="jbolt_page" data-key="#(pmkey)" data-dontchangeleftnav="true" data-text="JboltTable单实例">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-2">
+	<h1>JBoltTable-工具栏</h1>
+	</div>
+	<div class="col-8 text-center">
+		<form class="form-inline" id="jboltversion_JboltTableForm_normal" action="demo/jbolttable/normalToolbar" data-pjaxsubmit  method="get">
+		<input type="text" autocomplete="off"  class="form-control"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+		<button  type="submit" class="btn btn-light" ><i class="fa fa-search"></i> 查询</button>
+		</form>
+	</div>
+	<div class="col-2">
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<div class="jbolt_table_toolbar" id="jbolt_table_toolbar_normal">
+<div class="btn-group" role="group" aria-label="btn-group">
+<button data-dialogbtn data-area="600,400"  data-handler="refreshPjaxContainer" data-title="新增版本" data-url="demo/jbolttable/add" class="btn btn-secondary" ><i class="fa fa-plus"></i> 新增</button>
+<button data-dialogbtn data-area="600,400"  data-handler="refreshPjaxContainer" data-title="编辑版本" data-check-handler="jboltTableGetCheckedId" data-url="demo/jbolttable/edit/" class="btn btn-secondary"><i class="fa fa-edit"></i> 编辑</button>
+<button data-ajaxbtn data-handler="removeJBoltTableCheckedTr" data-check-handler="jboltTableGetCheckedIds" data-url="demo/jbolttable/deleteByIds?ids=" data-confirm="确定删除选中数据？" class="btn btn-secondary" ><i class="fa fa-trash"></i> 删除</button>
+</div>
+<div class="btn-group" role="group" aria-label="btn-group">
+<button class="btn btn-secondary" onclick="alert(jboltTableIsCheckedAll(this))"><i class="fa fa-check"></i> 是否全选了</button>
+<button class="btn btn-secondary" onclick="alert(jboltTableGetCheckedId(this))"><i class="fa fa-check"></i> 得到选中行ID(单)</button>
+<button class="btn btn-secondary" onclick="alert(jboltTableGetCheckedIds(this))"><i class="fa fa-check"></i> 得到选中行IDs(多)</button>
+<button class="btn btn-secondary" onclick="alert(jboltTableIsCheckedNone(this))"><i class="fa fa-check"></i> 是否一个没选</button>
+<button class="btn btn-secondary" onclick="alert(jboltTableGetCheckedCount(this))"><i class="fa fa-check"></i> 得到选中个数</button>
+</div>
+
+<div class="btn-group pull-right" role="group" aria-label="btn-group">
+<button class="btn btn-secondary" data-title="使用Excel上传并导入数据" data-dialogbtn data-btn="close" data-area="600,400" data-url="demo/jbolttable/initImport"><i class="fa fa-upload"></i> 导入Excel</button>
+<button class="btn btn-secondary" data-downloadbtn  data-url="demo/jbolttable/download"><i class="fa fa-download"></i> 导出Excel</button>
+</div>
+</div>
+<table class="table_striped thead_font_normal table-center"
+data-jbolttable
+data-fixed-columns-left="1,2"
+data-column-prepend="2:checkbox"
+data-toolbar="jbolt_table_toolbar_normal"
+data-conditions-form="jboltversion_JboltTableForm_normal"
+data-sortable-columns="version,publish_time,create_time"
+data-sort="#((sortColumn&&sortType)?(sortColumn+':'+sortType):'')"
+data-default-sort-column="create_time">
+<thead>
+<tr><th data-width="60" data-column="index">序号</th>
+<th data-width="200" data-column="version" data-nochange>版本号</th>
+<th data-width="150" data-column="publish_time">发布时间</th>
+<th data-width="150" data-column="create_time">创建时间</th>
+<th data-width="120">更新文件管理</th>
+<th data-width="110" data-nochange>是否最新版</th>
+<th data-width="80" data-nochange>操作</th>
+</tr>
+</thead>
+<tbody>
+#for(data:dataList??)
+<tr data-id="#(data.id)">
+<td>#(for.count)</td>
+<td>#(data.version??)</td>
+<td>#date(data.publishTime??,"yyyy-MM-dd HH:mm")</td>
+<td>#date(data.createTime??,"yyyy-MM-dd HH:mm")</td>
+<td><a  tooltip  title="更新文件管理"  href="demo/jbolttable/files/#(data.id)" data-scroll="yes"  data-btn="no" data-title="更新文件管理" data-area="980,600" class="jbolt_table_editbtn"><i class="fa fa-files-o c-primary"></i></a></td>
+<td><img data-switchbtn  data-value="#(data.isNew?? false)" data-handler="refreshPjaxContainer"  data-url="/demo/jbolttable/toggleIsNew/#(data.id)"/></td>
+<td>
+<a tooltip  title="编辑"  href="demo/jbolttable/edit/#(data.id)" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a tooltip  title="删除"  href="demo/jbolttable/delete/#(data.id)" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+#end
+</tbody>
+	 </table>
+</div>
+</div>
+#end
+
+#define js()
+<script>
+$(function(){
+	###这里因为是进入二级内页 所以需要写这个 为了在刷新浏览器后还能选中左侧导航
+	openLeftNav("/demo/jbolttable");
+})
+</script>
+#end

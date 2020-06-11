@@ -1,0 +1,1 @@
+删除原来的jb_demotable表 重新导入jb_demotable.sql

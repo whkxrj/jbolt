@@ -1,0 +1,2 @@
+alter table jb_dictionary add column `type_key` varchar(255) DEFAULT NULL COMMENT '字典类型KEY';
+update jb_dictionary as dic set dic.type_key=(select dict.type_key from jb_dictionary_type as dict where dict.id=dic.type_id);

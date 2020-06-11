@@ -1,0 +1,1 @@
+alter table jb_wechat_user add column `phone_country_code` varchar(40) DEFAULT NULL COMMENT '手机号国家代码';

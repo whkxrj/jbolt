@@ -1,0 +1,302 @@
+#@adminLayout()
+#define main()
+<div class="jbolt_page" data-key="/demo/checkbox">
+<div class="jbolt_page_title">
+	<h1>Demo-Checkbox演示</h1>
+</div>
+<div class="jbolt_page_content">
+
+<div class="row">
+<div class="col-6">
+<div class="card">
+	<div class="card-header px-3 py-2">
+	<span>CheckBox组件_普通</span>
+	<div class="btn-group btn-group-sm pull-right" role="group" aria-label="btn-group">
+	    <button type="button" class="btn btn-primary" onclick="CheckboxUtil.checkAll('aihao')">全选</button>
+	    <button type="button" class="btn btn-info" onclick="CheckboxUtil.uncheckAll('aihao')">全不选</button>
+	    <button type="button" class="btn btn-danger" onclick="CheckboxUtil.convertCheckAll('aihao')">反选</button>
+	</div>
+	</div>
+	<div class="card-body">
+	<form action="demo/checkbox/submit" method="post" onsubmit="return FormChecker.check(this)">
+	 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(aihao??)" 
+		data-name="aihao" 
+		data-default="1,3">
+		<label class="col-auto col-form-label" >兴趣爱好：</label>
+			<div class="col"  style="padding-top: 1px;">
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="c1" type="checkbox" name="aihao"   value="1"/>
+					<label for="c1">唱歌</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="c2" type="checkbox" name="aihao"   value="2"/>
+					<label for="c2">跳舞</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="c3" type="checkbox" name="aihao"   value="3"/>
+					<label for="c3">绘画</label>
+				</div>
+			</div>
+		</div>
+	 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(aihao1??)" 
+		data-name="aihao1" 
+		data-default="1,3">
+		<label class="col-auto col-form-label" >兴趣爱好：</label>
+			<div class="col"  style="padding-top: 1px;">
+				<div class="checkbox checkbox-primary">
+					<input  id="c11" type="checkbox" name="aihao1"   value="1"/>
+					<label for="c11">唱歌</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary">
+					<input  id="c22" type="checkbox" name="aihao1"   value="2"/>
+					<label for="c22">跳舞</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary">
+					<input  id="c33" type="checkbox" name="aihao1"   value="3"/>
+					<label for="c33">绘画</label>
+				</div>
+			</div>
+		</div>
+		
+		
+		 <div class="form-group row" 
+			data-checkbox 
+			data-rule="checkbox" 
+			data-tips="确认阅读并接受条款后才能继续" 
+			data-name="readAndOk">
+			<div class="col"  style="padding-top: 1px;">
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="ch1" type="checkbox" name="readAndOk"/>
+					<label for="ch1">我已阅读并接受《xxxx条款》</label>
+				</div>
+		   </div>
+		</div>
+	<div class="alert alert-info">通过在一组checkbox的父元素标签上配置属性，可实现自动加载、自动校验、自动选中，无需写JS,此案例是简单案例，未自动加载数据源</div>
+	<div class="form-group text-right"><button class="btn btn-primary" type="submit">Test It</button></div>
+	</form>
+	</div>
+	</div>
+
+</div>
+<div class="col-6">
+<div class="card">
+	<div class="card-header px-3 py-2">
+	<span>CheckBox组件_自动加载数据</span>
+	<div class="btn-group btn-group-sm pull-right" role="group" aria-label="btn-group">
+	    <button type="button" class="btn btn-primary" onclick="CheckboxUtil.checkAll('filetypes')">全选</button>
+	    <button type="button" class="btn btn-info" onclick="CheckboxUtil.uncheckAll('filetypes')">全不选</button>
+	    <button type="button" class="btn btn-danger" onclick="CheckboxUtil.convertCheckAll('filetypes')">反选</button>
+	</div>
+	</div>
+	<div class="card-body">
+	<form action="demo/checkbox/submit" method="post" onsubmit="return FormChecker.check(this)">
+	 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(filetypes??)" 
+		data-name="filetypes" 
+		data-default=""
+		data-url="/demo/dictionary?key=filetype"
+		data-label="类型："
+		data-width="col-2,col-10"
+		data-inline="true"
+		>
+		</div>
+		
+		 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(filetypes2??)" 
+		data-name="filetypes2" 
+		data-default=""
+		data-url="/demo/dictionary?key=filetype"
+		data-label="类型："
+		data-width="col-2,col-10">
+		</div>
+		
+		<div class="btn-group btn-group-sm" role="group" aria-label="btn-group">
+	    <button type="button" class="btn btn-primary" onclick="CheckboxUtil.checkAll('filetypes2')">全选</button>
+	    <button type="button" class="btn btn-info" onclick="CheckboxUtil.uncheckAll('filetypes2')">全不选</button>
+	    <button type="button" class="btn btn-danger" onclick="CheckboxUtil.convertCheckAll('filetypes2')">反选</button>
+	</div>
+	<div class="alert alert-info mt-5">通过在一组checkbox的父元素标签上配置属性，可实现自动加载、自动校验、自动选中，无需写JS,此案例是简单案例，未自动加载数据源
+	data-inline="true" 设置横纵排列样式
+	</div>
+	<div class="form-group text-right"><button class="btn btn-primary" type="submit">Test It</button></div>
+	</form>
+	</div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="row mt-5">
+<div class="col-6">
+<div class="card">
+	<div class="card-header">CheckBox组件_ disabled</div>
+	<div class="card-body">
+	 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(aihaoDisabled??)" 
+		data-name="aihaoDisabled" 
+		data-disabled
+		data-default="1,3">
+		<label class="col-auto col-form-label" >兴趣爱好：</label>
+			<div class="col"  style="padding-top: 1px;">
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="cd1" type="checkbox" name="aihaoDisabled"   value="1"/>
+					<label for="cd1">唱歌</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="cd2" type="checkbox" name="aihaoDisabled"   value="2"/>
+					<label for="cd2">跳舞</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="cd3" type="checkbox" name="aihaoDisabled"   value="3"/>
+					<label for="cd3">绘画</label>
+				</div>
+			</div>
+		</div>
+	<div class="alert alert-info">通过在一组checkbox的父元素标签上配置属性，可实现自动加载、自动校验、自动选中，无需写JS,此案例是简单案例，未自动加载数据源</div>
+	</div>
+	</div>
+
+</div>
+<div class="col-6">
+<div class="card">
+	<div class="card-header px-3 py-2">
+	<span>CheckBox组件_自动加载数据</span>
+	<div class="btn-group btn-group-sm pull-right" role="group" aria-label="btn-group">
+	    <button type="button" class="btn btn-primary" onclick="CheckboxUtil.checkAll('filetypes3')">全选</button>
+	    <button type="button" class="btn btn-info" onclick="CheckboxUtil.uncheckAll('filetypes3')">全不选</button>
+	    <button type="button" class="btn btn-danger" onclick="CheckboxUtil.convertCheckAll('filetypes3')">反选</button>
+	</div>
+	</div>
+	<div class="card-body">
+	<form action="demo/checkbox/submit" method="post" onsubmit="return FormChecker.check(this)">
+	 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(filetypes3??)" 
+		data-name="filetypes3" 
+		data-default=""
+		data-url="/demo/dictionary?key=filetype"
+		data-label="类型："
+		data-width="col-2,col-10"
+		data-inline="true"
+		data-align-left="true"
+		>
+		</div>
+	<div class="alert alert-info mt-5">
+	data-align-left="true" 设置等宽左对齐
+	</div>
+	</form>
+	</div>
+	</div>
+
+</div>
+</div>
+
+<div class="row mt-5">
+<div class="col-6">
+<div class="card">
+	<div class="card-header">CheckBox组件_ processHiddenInput</div>
+	<div class="card-body">
+	<input type="text" id="adiHiddenInput"  value="#(aihao3?? '1,3')" autocomplete="off" />
+	 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(aihao3)" 
+		data-name="aihao3" 
+		data-handler="processHiddenInput"
+		data-hiddeninput="adiHiddenInput"
+		data-default="1,3">
+		<label class="col-auto col-form-label" >兴趣爱好：</label>
+			<div class="col"  style="padding-top: 1px;">
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="cdi1" type="checkbox" name="aihao3"   value="1"/>
+					<label for="cdi1">唱歌</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="cdi2" type="checkbox" name="aihao3"   value="2"/>
+					<label for="cdi2">跳舞</label>
+				</div>
+				
+				<div class="checkbox checkbox-primary  checkbox-inline">
+					<input  id="cdi3" type="checkbox" name="aihao3"   value="3"/>
+					<label for="cdi3">绘画</label>
+				</div>
+			</div>
+		</div>
+	<div class="alert alert-info">
+	data-handler="processHiddenInput" 设置默认change后的handler <br/>data-hiddeninput="adiHiddenInput" 关联设置的隐藏域ID
+	</div>
+	</div>
+	</div>
+
+</div>
+<div class="col-6">
+<div class="card">
+	<div class="card-header px-3 py-2">
+	<span>CheckBox组件_自动加载数据</span>
+	<input type="text" id="filetypes6HiddenInput"  value="#(filetypes6)" autocomplete="off" />
+	<div class="btn-group btn-group-sm pull-right" role="group" aria-label="btn-group">
+	    <button type="button" class="btn btn-primary" onclick="CheckboxUtil.checkAll('filetypes6')">全选</button>
+	    <button type="button" class="btn btn-info" onclick="CheckboxUtil.uncheckAll('filetypes6')">全不选</button>
+	    <button type="button" class="btn btn-danger" onclick="CheckboxUtil.convertCheckAll('filetypes6')">反选</button>
+	</div>
+	</div>
+	<div class="card-body">
+	<form action="demo/checkbox/submit" method="post" onsubmit="return FormChecker.check(this)">
+	 <div class="form-group row" 
+		data-checkbox 
+		data-rule="checkbox"  
+		data-value="#(filetypes6??)" 
+		data-name="filetypes6" 
+		data-default=""
+		data-url="/demo/dictionary?key=filetype"
+		data-label="类型："
+		data-width="col-2,col-10"
+		data-inline="true"
+		data-align-left="true"
+		
+		data-handler="processHiddenInput"
+		data-hiddeninput="filetypes6HiddenInput"
+		>
+		</div>
+	<div class="alert alert-info mt-5">
+	data-handler="processHiddenInput" 设置默认change后的handler <br/>data-hiddeninput="adiHiddenInput" 关联设置的隐藏域ID
+	</div>
+	</form>
+	</div>
+	</div>
+
+</div>
+</div>
+
+</div>
+</div>
+#end
+
+#define js()
+<script>
+
+$(function(){
+})
+</script>
+#end

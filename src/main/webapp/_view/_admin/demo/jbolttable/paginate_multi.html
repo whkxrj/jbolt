@@ -1,0 +1,108 @@
+#@adminLayout()
+#define main()
+###这里因为是进入二级内页  data-dontchangeleftnav="true" 保持左侧选中导航不变
+<div class="jbolt_page" data-key="#(pmkey)"  data-dontchangeleftnav="true" data-text="JBoltTable多实例分页">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-5">
+	<h1>JBoltTable-分页多实例</h1>
+	</div>
+	<div class="col-5">
+		
+	</div>
+	<div class="col-2">
+	<button data-area="600,400" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="新增版本" data-url="/demo/jbolttable/add" class="pull-right jbolt_table_addbtn btn btn-success" ><i class="fa fa-plus"></i> 新增</button>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<div class="row">
+<div class="col-6">
+<form class="form-inline mb-3" id="jboltversion_JboltTableForm_paginate1" action="demo/jbolttable/paginateMulti"  data-pjaxsubmit method="get"></form>	
+	<!-- JBoltTable -->
+<table cellspacing="0" cellpadding="0" border="0" class="table_striped table-center thead_font_normal"
+	  data-jbolttable
+	  data-fixed-columns-left="1,2"
+	  data-fixed-columns-right="6,7"
+	  data-page="jboltTablePage1"
+	  data-height="500"
+	  data-page="jboltTablePage1"
+	  data-conditions-form="jboltversion_JboltTableForm_paginate1"
+	  data-sortable-columns="version,publish_time,create_time"
+	  data-sort="#((sortColumn&&sortType)?(sortColumn+':'+sortType):'')"
+	  data-default-sort-column="create_time"
+	 >
+<thead>
+<tr><th data-width="60">序号</th><th data-width="150" data-column="version">版本号</th><th data-width="150" data-column="publish_time">发布时间</th><th data-width="150" data-column="create_time">创建时间</th><th data-width="120">更新文件管理</th><th data-width="110">是否最新版</th><th data-width="100">操作</th></tr>
+</thead>
+<tbody>
+#for(data:pageData.list??)
+<tr>
+<td>#rownum(for.count,pageData.pageNumber,pageData.pageSize)</td>
+<td>#(data.version??)</td>
+<td>#date(data.publishTime??,"yyyy-MM-dd HH:mm")</td>
+<td>#date(data.createTime??,"yyyy-MM-dd HH:mm")</td>
+<td><a  tooltip  title="更新文件管理"  href="demo/jbolttable/files/#(data.id)" data-scroll="yes"  data-btn="no" data-title="更新文件管理" data-area="980,600" class="jbolt_table_editbtn"><i class="fa fa-files-o c-primary"></i></a></td>
+<td><img data-switchbtn data-value="#(data.isNew?? false)" data-handler="refreshPjaxContainer"  data-url="/demo/jbolttable/toggleIsNew/#(data.id)"/></td>
+<td>
+<a tooltip  title="编辑"  href="demo/jbolttable/edit/#(data.id)" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a tooltip  title="删除"  href="demo/jbolttable/delete/#(data.id)" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+#end
+</tbody>
+ </table>
+#include("/_view/_admin/common/_jbolt_table_page.html",pageEleId="jboltTablePage1")
+</div>
+<div class="col-6">
+<form class="form-inline mb-3" id="jboltversion_JboltTableForm_paginate2" action="demo/jbolttable/paginateMulti"  data-pjaxsubmit method="get"></form>
+	<!-- JBoltTable -->
+<table cellspacing="0" cellpadding="0" border="0" class="table_striped table-center thead_font_normal"
+	  data-jbolttable
+	  data-fixed-columns-left="1,2"
+	  data-fixed-columns-right="6,7"
+	  data-height="500"
+	  data-page="jboltTablePage2"
+	  data-conditions-form="jboltversion_JboltTableForm_paginate2"
+	  data-sortable-columns="version,publish_time,create_time"
+	  data-sort="#((sortColumn&&sortType)?(sortColumn+':'+sortType):'')"
+	  data-default-sort-column="create_time"
+	 >
+<thead>
+<tr><th data-width="60">序号</th><th data-width="150" data-column="version">版本号</th><th data-width="150" data-column="publish_time">发布时间</th><th data-width="150" data-column="create_time">创建时间</th><th data-width="120">更新文件管理</th><th data-width="110">是否最新版</th><th data-width="100">操作</th></tr>
+</thead>
+<tbody>
+#for(data:pageData.list??)
+<tr>
+<td>#rownum(for.count,pageData.pageNumber,pageData.pageSize)</td>
+<td>#(data.version??)</td>
+<td>#date(data.publishTime??,"yyyy-MM-dd HH:mm")</td>
+<td>#date(data.createTime??,"yyyy-MM-dd HH:mm")</td>
+<td><a  tooltip  title="更新文件管理"  href="demo/jbolttable/files/#(data.id)" data-scroll="yes"  data-btn="no" data-title="更新文件管理" data-area="980,600" class="jbolt_table_editbtn"><i class="fa fa-files-o c-primary"></i></a></td>
+<td><img data-switchbtn data-value="#(data.isNew?? false)" data-handler="refreshPjaxContainer"  data-url="/demo/jbolttable/toggleIsNew/#(data.id)"/></td>
+<td>
+<a tooltip  title="编辑"  href="demo/jbolttable/edit/#(data.id)" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a tooltip  title="删除"  href="demo/jbolttable/delete/#(data.id)" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+#end
+</tbody>
+ </table>
+#include("/_view/_admin/common/_jbolt_table_page.html",pageEleId="jboltTablePage2")
+</div>
+</div>
+</div>
+</div>
+#end
+
+#define js()
+<script>
+$(function(){
+	###这里因为是进入二级内页 所以需要写这个 为了在刷新浏览器后还能选中左侧导航
+	openLeftNav("/demo/jbolttable");
+	###初始化分页组件
+	initPage("jboltTablePage1",#(pageData.totalPage??),#(pageData.pageNumber??),"jboltversion_JboltTableForm_paginate1");
+	initPage("jboltTablePage2",#(pageData.totalPage??),#(pageData.pageNumber??),"jboltversion_JboltTableForm_paginate2");
+})
+</script>
+#end

@@ -1,0 +1,16 @@
+#jbolt主库之外的其它数据库 子项目数据库配置文件 会基于此文件 创建N个activeRecordPlugin独立配置
+#其中configName就是这里的分组的name
+
+[jfinalxueyuan]
+db_type=mysql
+dev_mode=true
+jdbc_url = jdbc:mysql://127.0.0.1:3306/jfinalxueyuan?characterEncoding=utf8&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+user = root
+password =root
+
+[meinvtu]
+db_type=mysql
+dev_mode=true
+jdbc_url = jdbc:mysql://127.0.0.1:3306/meinvtu?characterEncoding=utf8&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+user = root
+password =root

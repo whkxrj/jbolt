@@ -1,0 +1,76 @@
+#@adminLayout()
+#define main()
+<div class="jbolt_page" data-key="#(pmkey)">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-auto">
+	<h1>品牌库管理</h1>
+	</div>
+	<div class="col text-center">
+	<form class="form-inline" id="mallGoodsBrandForm" action="admin/mall/brand" method="get">
+			<input type="text" autocomplete="off"  class="form-control"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+			<button  type="submit" class="btn btn-light" ><i class="fa fa-search"></i> 查询</button>
+		</form>
+	</div>
+	<div class="col-auto">
+		<button data-area="800,500" id="mallGoodsBrandAddBtn" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="新增品牌" data-url="admin/mall/brand/add" class="pull-right jbolt_table_addbtn btn btn-success" ><i class="fa fa-plus"></i> 新增</button>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<!-- 数据模板定义-->
+<script type="text/template" id="mall_brand_rowtpl">
+{@each datas as data,index}
+<tr>
+{@if pageSize&&pageSize>0}
+<td>${((pageNumber-1)*pageSize)+(+index+1)}</td>
+{@else}
+<td>${+index+1}</td>
+{@/if}
+<td>${data.name}</td>
+<td>${data.englishName}</td>
+<td><img class="j_goodslist_mainimg" data-photobtn tooltip data-title="点击查看大图"  src="${data.logo|real_image}" onerror="this.src='assets/img/uploadimg.png'"/></td>
+<td>${data.url}</td>
+<td>${data.remark}</td>
+<td><img data-switchbtn data-value="${data.enable}"   data-url="admin/mall/brand/toggleEnable/${data.id}"/></td>
+<td>
+<a  tooltip  title="编辑"  href="admin/mall/brand/edit/${data.id}" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="编辑" data-area="800,500" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a  tooltip  title="删除"  href="admin/mall/brand/delete/${data.id}" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+{@/each}
+</script>
+
+<table class="thead_font_normal text-center"
+data-jbolttable
+data-height="fill"
+data-column-resize="true"
+data-conditions-form="mallGoodsBrandForm"
+data-bind-elements="#mallGoodsBrandAddBtn"
+data-ajax="true"
+data-page="mallGoodsBrandPage"
+data-pagesize="15"
+data-url="admin/mall/brand/datas"
+data-rowtpl="mall_brand_rowtpl"
+
+data-sortable-columns="name,english_name"
+data-sort="#((sortColumn&&sortType)?(sortColumn+':'+sortType):'')"
+>
+<thead>
+<tr>
+<th data-width="60" data-column="index">序号</th><th data-width="150"  data-nochange>中文名</th><th data-width="200"  data-nochange>英文名</th><th data-width="150"  data-nochange>LOGO</th><th>网址</th><th>备注</th><th  data-width="120"  data-nochange>启用/禁用</th><th  data-width="100"  data-nochange>操作</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+#end
+#define js()
+<script>
+$(function(){
+});
+</script>
+#end
+

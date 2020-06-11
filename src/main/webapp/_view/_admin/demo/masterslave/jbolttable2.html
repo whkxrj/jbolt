@@ -1,0 +1,93 @@
+#@adminLayout()
+#setLocal(pageId=RandomUtil.random(6))
+#define main()
+<div class="jbolt_page" data-key="#(pmkey)"  data-require-plugin="splitjs" data-init-handler="initHandlerMs_#(pageId)">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-4">
+	<h1>主从表管理demo-JBoltTable</h1>
+	</div>
+	<div class="col-6">
+		<form class="form-inline" id="masterSlaveForm_#(pageId)" action="demo/masterslave"  method="get"></form>
+	</div>
+	<div class="col-2">
+	<button data-area="600,400" id="jboltTableMasterAddBtn_#(pageId)" data-handler="refreshJBoltTable" data-title="新增版本" data-url="admin/jboltversion/add" class="pull-right jbolt_table_addbtn btn btn-success" ><i class="fa fa-plus"></i> 新增</button>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<div class="jbolttable_master_slave_box">
+<div class="split" id="master_#(pageId)">
+    	 <!-- JBoltTable的数据模板定义-->
+<script type="text/template" id="jboltTable_master_demotpl">
+{@each datas as data,index}
+<tr data-id="${data.id}">
+{@if pageSize&&pageSize>0}
+<td>${((pageNumber-1)*pageSize)+(+index+1)}</td>
+{@else}
+<td>${+index+1}</td>
+{@/if}
+<td>${data.version}</td>
+<td>${data.publishTime|date_ymdhm}</td>
+<td>${data.createTime|date_ymdhm}</td>
+<td><a  tooltip  title="更新文件管理"  href="demo/jbolttable/files/${data.id}" data-scroll="yes"  data-btn="no" data-title="更新文件管理" data-area="980,600" class="jbolt_table_editbtn"><i class="fa fa-files-o c-primary"></i></a></td>
+<td><img data-switchbtn data-value="${data.isNew}" data-handler="refreshJBoltTable"  data-url="/demo/jbolttable/toggleIsNew/${data.id}"/></td>
+<td>
+<a tooltip  title="编辑"  href="demo/jbolttable/edit/${data.id}" data-scroll="yes" data-handler="refreshJBoltTable" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a tooltip  title="删除"  href="demo/jbolttable/delete/${data.id}" data-handler="refreshJBoltTable" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+{@/each}
+</script>
+ <table class="table_striped thead_font_normal"
+  data-jbolttable
+  data-fixed-columns-left="1,2"
+  data-fixed-columns-right="7"
+  data-column-resize="true"
+  data-height="fill"
+  data-ajax="true"
+  data-bind-elements="#jboltTableMasterAddBtn_#(pageId)"
+  data-conditions-form="masterSlaveForm_#(pageId)"
+  data-page="jboltTablePage_master_#(pageId)"
+  data-pagesize="10"
+  data-url="/demo/masterslave/masterDatas"
+  data-rowtpl="jboltTable_master_demotpl"
+ >
+<thead>
+<tr><th data-width="60" data-column="index">序号</th><th data-width="150" data-nochange>版本号</th><th>发布时间</th><th>创建时间</th><th data-width="120" >更新文件管理</th><th data-width="110" data-nochange>是否最新版</th><th data-width="80" data-column="optcol">操作</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+    </div>
+    <div class="split" id="slave_#(pageId)">
+    <nav>
+  <div class="nav nav-tabs" role="tablist">
+    <a class="nav-item nav-link active" id="nav-mainfile-tab" data-toggle="tab" href="#nav-mainfile" role="tab" aria-controls="nav-mainfile" aria-selected="true">可更新主文件</a>
+    <a class="nav-item nav-link" id="nav-changelog-tab" data-toggle="tab" href="#nav-changelog" role="tab" aria-controls="nav-changelog" aria-selected="false">Changelog</a>
+  </div>
+</nav>
+<div class="tab-content">
+  <div data-ajaxportal data-orign-url="/demo/masterslave/mainFiles" data-url="/demo/masterslave/mainFiles" class="tab-pane fade show active" id="nav-mainfile" role="tabpanel" aria-labelledby="nav-mainfile-tab"></div>
+  <div data-ajaxportal data-orign-url="/demo/masterslave/changelog" data-url="/demo/masterslave/changelog" class="tab-pane fade" id="nav-changelog" role="tabpanel" aria-labelledby="nav-changelog-tab"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+#end
+#define js()
+<script>
+function initHandlerMs_#(pageId)(){
+	Split(['#master_#(pageId)', '#slave_#(pageId)'],{
+		direction:'vertical',
+		sizes:[60,40],
+		minSize:[300,200],
+		gutterSize:10
+	});
+}
+$(function(){
+	
+});
+</script>
+#end
+

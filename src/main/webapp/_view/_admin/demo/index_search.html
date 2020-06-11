@@ -1,0 +1,65 @@
+#@adminLayout()
+#define main()
+#set(pageId=RandomUtil.random(6))
+#set(JboltWithTabs=CACHE.getUserJBoltAdminWithTabs(session[SessionKey.ADMIN_USER_ID]))
+<div class="jbolt_page" data-key="#(pmkey)">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-auto">
+	<h1>更多查询条件</h1>
+	</div>
+	<div class="col text-center">
+	 
+		<form class="form-inline" id="mallgoodsForm_#(pageId)" action="admin/mall/goods" method="post">
+		<div class="row p-0">
+		<div class="col p-0">
+			<label class="col-form-label d-inline-block">分类:</label>
+			<input type="text" style="width:130px"  autocomplete="off"  value="=选择分类="  class="form-control"  placeholder="=选择分类=" data-load-type="html" data-content-id="goodsBackCategoryTree_goodsmgr_#(pageId)"  data-jboltinput data-width="300"/>
+			<input type="hidden" name="bcategoryId" value="#(bcategoryId?? 0)"/>
+			<input type="hidden" name="fcategoryId" value="#(fcategoryId?? 0)"/>
+			<input type="hidden" name="isDelete" value="#(isDelete?? false)"/>
+			<input type="text" autocomplete="off"  class="form-control" style="width:130px"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+			<!-- 更多查询条件显示 -->
+			<button type="button" tooltip data-title="打开/关闭 更多条件" onclick="toggleVisiable('.jb_more_conditions')" class="btn btn- btn-sm"><i class="jbicon jb-prop2"></i></button>
+			<div class="jb_more_conditions">
+				<input type="text" autocomplete="off"  class="form-control" style="width:130px"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+				<select class="form-control ml-1"  data-url="admin/mall/goods/onSaleOptions"  name="onSale" data-autoload data-text="=上下架=" data-value="" data-select="#(onSale??)"></select>
+				<select class="form-control ml-1"  data-url="admin/mall/goods/isHotOptions"  name="isHot" data-autoload data-text="=热销=" data-value="" data-select="#(isHot??)"></select>
+				<select class="form-control ml-1"  data-url="admin/mall/goods/isRecommendOptions"  name="isRecommend" data-autoload data-text="=推荐=" data-value="" data-select="#(isRecommend??)"></select>
+				<div class="p-1"></div>
+				<input type="text" autocomplete="off"  class="form-control" style="width:130px"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+				<select class="form-control ml-1"  data-url="admin/mall/goods/onSaleOptions"  name="onSale" data-autoload data-text="=上下架=" data-value="" data-select="#(onSale??)"></select>
+				<select class="form-control ml-1"  data-url="admin/mall/goods/isHotOptions"  name="isHot" data-autoload data-text="=热销=" data-value="" data-select="#(isHot??)"></select>
+				<select class="form-control ml-1"  data-url="admin/mall/goods/isRecommendOptions"  name="isRecommend" data-autoload data-text="=推荐=" data-value="" data-select="#(isRecommend??)"></select>
+			</div>
+		</div>
+		<div class="text-left" style="width:70px;">
+		<button  type="button"  id="goodsSearchBtn_#(pageId)" onclick="normalData_#(pageId)()" class="btn btn-light pull-right" ><i class="fa fa-search"></i> 查询</button>
+		</div>
+		</div>
+		
+		</form>
+	</div>
+	<div class="col-auto">
+	<a #if(JboltWithTabs) data-tabtrigger #else data-pjax #end data-key="mall_goods_preadd" href="admin/mall/goods/preadd" data-title="添加新商品" class="pull-right btn btn-success mr-1" style="width:70px;" ><i class="fa fa-plus"></i> 添加</a>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+ 
+
+<table class="jbolt_table thead_font_normal table-center tbody_lh20" 
+data-jbolttable
+>
+<thead>
+<tr><th data-width="70" data-column="index">序号</th><th data-width="260" data-nochange>商品</th><th data-width="120"  data-nochange>主图</th><th data-min-width="200">营销语</th><th data-width="120"  data-nochange>价格(元)</th><th  data-width="120"  data-nochange>销量</th><th  data-width="80"  data-nochange>上下架</th><th  data-width="80"  data-nochange>热销</th><th data-width="80"  data-nochange>推荐</th><th data-width="200"  data-nochange>时间</th><th  data-width="80"  data-nochange>操作</th></tr>
+</thead>
+<tbody>
+</tbody>
+</table>	
+
+</div>
+</div>
+#end
+
+

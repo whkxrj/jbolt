@@ -1,0 +1,106 @@
+#@adminLayout()
+#define main()
+###这里因为是进入二级内页  data-dontchangeleftnav="true" 保持左侧选中导航不变
+<div class="jbolt_page" data-key="#(pmkey)" data-dontchangeleftnav="true" data-text="JboltTable复杂表头">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-5">
+	<h1>JBoltTable-本地复杂表头</h1>
+	<span> #(dataList.size()?? 0) 条记录</span>
+	</div>
+	<div class="col-5">
+		<form class="form-inline" id="jboltversion_JboltTableForm_normalthead" action="demo/jbolttable/normalThead" data-pjaxsubmit  method="get">
+		<input type="text" autocomplete="off"  class="form-control"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+		<button  type="submit" class="btn btn-light" ><i class="fa fa-search"></i> 查询</button>
+		</form>
+	</div>
+	<div class="col-2">
+	<button data-area="600,400" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="新增版本" data-url="/demo/jbolttable/add" class="pull-right jbolt_table_addbtn btn btn-success" ><i class="fa fa-plus"></i> 新增</button>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<div class="row">
+<div class="col-6">
+<table class="table_striped thead_font_normal table-center"
+data-jbolttable
+data-column-resize="true"
+data-conditions-form="jboltversion_JboltTableForm_normalthead"
+data-sortable-columns="version,publish_time,create_time"
+data-sort="#((sortColumn&&sortType)?(sortColumn+':'+sortType):'')"
+data-default-sort-column="create_time">
+<thead>
+<tr>
+<th data-width="60" rowspan="3" data-column="index">序号</th>
+<th colspan="3">JBolt版本</th>
+<th data-width="120" rowspan="3" data-nochange>更新文件管理</th>
+<th data-width="110" rowspan="3" data-nochange>是否最新版</th>
+<th data-width="80" rowspan="3" data-nochange>操作</th></tr>
+<tr><th data-width="150" data-nochange data-column="version" rowspan="2">版本号</th><th colspan="2">版本时间</th></tr>
+<tr><th data-width="150" data-column="publish_time">发布时间</th><th data-width="150" data-column="create_time">创建时间</th></tr>
+</thead>
+<tbody>
+#for(data:dataList??)
+<tr>
+<td>#(for.count)</td>
+<td>#(data.version??)</td>
+<td>#date(data.publishTime??,"yyyy-MM-dd HH:mm")</td>
+<td>#date(data.createTime??,"yyyy-MM-dd HH:mm")</td>
+<td><a  tooltip  title="更新文件管理"  href="demo/jbolttable/files/#(data.id)" data-scroll="yes"  data-btn="no" data-title="更新文件管理" data-area="980,600" class="jbolt_table_editbtn"><i class="fa fa-files-o c-primary"></i></a></td>
+<td><img data-switchbtn  data-value="#(data.isNew?? false)" data-handler="refreshPjaxContainer"  data-url="/demo/jbolttable/toggleIsNew/#(data.id)"/></td>
+<td>
+<a tooltip  title="编辑"  href="demo/jbolttable/edit/#(data.id)" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a tooltip  title="删除"  href="demo/jbolttable/delete/#(data.id)" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+#end
+</tbody>
+</table>
+</div>
+<div class="col-6">
+<table class="table_striped thead_font_normal table-center"
+data-jbolttable
+data-conditions-form="jboltversion_JboltTableForm_normalthead"
+data-sortable-columns="version,publish_time,create_time"
+data-sort="#((sortColumn&&sortType)?(sortColumn+':'+sortType):'')"
+data-default-sort-column="create_time">
+<thead>
+<tr>
+<th data-width="60" rowspan="2">序号</th>
+<th data-width="150" data-column="version"  rowspan="2">版本号</th>
+<th colspan="2">版本时间</th>
+<th data-width="120" rowspan="2">更新文件管理</th>
+<th data-width="110" rowspan="2">是否最新版</th>
+<th data-width="100" rowspan="2">操作</th></tr>
+<tr><th data-width="150" data-column="publish_time">发布时间</th><th data-width="150" data-column="create_time">创建时间</th></tr>
+</thead>
+<tbody>
+#for(data:dataList??)
+<tr>
+<td>#(for.count)</td>
+<td>#(data.version??)</td>
+<td>#date(data.publishTime??,"yyyy-MM-dd HH:mm")</td>
+<td>#date(data.createTime??,"yyyy-MM-dd HH:mm")</td>
+<td><a  tooltip  title="更新文件管理"  href="demo/jbolttable/files/#(data.id)" data-scroll="yes"  data-btn="no" data-title="更新文件管理" data-area="980,600" class="jbolt_table_editbtn"><i class="fa fa-files-o c-primary"></i></a></td>
+<td><img data-switchbtn  data-value="#(data.isNew?? false)" data-handler="refreshPjaxContainer"  data-url="/demo/jbolttable/toggleIsNew/#(data.id)"/></td>
+<td>
+<a tooltip  title="编辑"  href="demo/jbolttable/edit/#(data.id)" data-scroll="yes" data-handler="refreshPjaxContainer" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a tooltip  title="删除"  href="demo/jbolttable/delete/#(data.id)" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+#end
+</tbody>
+</table>
+</div>
+</div>
+</div>
+#end
+
+#define js()
+<script>
+$(function(){
+	###这里因为是进入二级内页 所以需要写这个 为了在刷新浏览器后还能选中左侧导航
+	openLeftNav("/demo/jbolttable");
+})
+</script>
+#end

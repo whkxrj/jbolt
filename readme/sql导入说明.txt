@@ -1,0 +1,15 @@
+jbolt_mysql.sql文件
+创建数据库 名字为 jbolt
+导入jbolt_mysql.sql
+
+如果使用其它数据库请导入对应的sql，并且修改config.properties和config-pro.properties中
+的db_type=postgresql
+或者db_type=sqlserver
+或者db_type=oracle
+
+
+oracle中有多种默认第一种jbolt_oracle.sql是id为number(9) java是Integer类型
+第二种jbolt_oracle_longid.sql是id为number(19) java是Long类型 id用雪花算法生成
+第三种jbolt_oracle_stringid.sql是id为nvarchar2(40) java是String 用雪花|UUID都可以
+
+用户名：admin 密码：123

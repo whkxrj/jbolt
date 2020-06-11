@@ -1,0 +1,81 @@
+#@adminLayout()
+#define main()
+<div class="jbolt_page" data-key="/demo/autoselect">
+<div class="jbolt_page_title">
+	<h1>Demo-AutoSelect演示</h1>
+	<a class="btn btn-primary mx-4" data-dialogbtn data-area="80%,80%" data-scroll="yes" data-btn="no"  href="demo/autoselect/indialog">在Dialog中演示</a>
+	<a class="btn btn-primary mx-4" data-jboltlayertrigger    href="demo/autoselect/injboltlayer">在JBoltLayer中演示</a>
+</div>
+<div class="jbolt_page_content">
+<!--href指的是后端方法的路径-->
+
+<!-- AutoSelect组件 -->
+
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6 col-xl-4">
+	<div class="card">
+	<div class="card-header">AutoSelect组件</div>
+	<div class="card-body">
+	<form action="demo/autoselect/submit" method="post" onsubmit="return FormChecker.check(this)">
+	<div class="form-group">
+		<select class="form-control"
+			name="dic" 
+			data-autoload  
+			data-refresh="true"
+			data-rule="required"  
+			data-tips="请选择数据分类" 
+			data-url="/demo/dictionary?key=group"  
+			data-text="=请选择数据分类=" 
+			data-value="" 
+			data-select="#(dic??)">
+		</select>
+	</div>
+	
+	<div class="form-group">
+		<select class="form-control"
+			name="userId" 
+			data-autoload  
+			data-url="admin/user/options"  
+			data-text="=选择用户=" 
+			data-value="" 
+			data-select="#(userId??)">
+		</select>
+	</div>
+	<span class="text-danger">data-onlyleaf="true" 设置只能选择叶子节点</span>
+	<div class="form-group">
+		<select class="form-control"
+			name="dic1" 
+			data-autoload  
+			data-rule="required"  
+			data-tips="请选择数据分类" 
+			data-url="/demo/dictionary?key=group"  
+			data-text="=请选择数据分类=" 
+			data-onlyleaf="true"
+			data-value="" 
+			data-select="#(dic1??)">
+		</select>
+	</div>
+	<div class="alert alert-info">通过在Select标签上配置数据源地址，已选择项目值，可实现自动加载、自动校验、自动选中，无需写JS</div>
+	<div class="form-group text-right"><button class="btn btn-primary" type="submit">Test It</button></div>
+	</form>
+	</div>
+	</div>
+</div>
+
+</div>
+</div>
+#end
+
+#define js()
+<script>
+function processL3Handler(select){
+	LayerMsgBox.success("processL3Handler："+select.val(),1000)
+}
+function processL4Handler(select){
+	LayerMsgBox.success("processL4Handler："+select.val(),1000)
+}
+
+$(function(){
+})
+</script>
+#end

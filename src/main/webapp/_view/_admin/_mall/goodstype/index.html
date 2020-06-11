@@ -1,0 +1,80 @@
+#@adminLayout()
+#define main()
+<div class="jbolt_page" data-key="#(pmkey??)">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-auto">
+	<h1>商品类型管理</h1>
+	</div>
+	<div class="col text-center">
+		<form class="form-inline" id="mallgoodstypeForm" action="admin/mall/goodstype"  method="post" onsubmit="return false;">
+		<input data-rule="" type="text" autocomplete="off"  class="form-control"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+			<button  type="submit" class="btn btn-light" ><i class="fa fa-search"></i> 查询</button>
+		</form>
+	</div>
+	<div class="col-auto">
+		<a href="admin/mall/goodstype/initRank" id="mallgoodsTypeInitRankBtn" data-ajaxbtn data-loading="执行中 " data-confirm="确定初始化顺序" tooltip  data-title="初始化顺序"  data-handler="jboltTablePageToFirst" class="pull-right btn btn-primary  mr-1"><i class="fa fa-sort"></i> 初始化排序</a>
+		<button data-area="600,360" data-scroll="yes" id="mallgoodsTypeAddBtn" data-handler="jboltTablePageToLast" data-title="新增商品类型" data-url="admin/mall/goodstype/add" class="pull-right jbolt_table_addbtn btn btn-success mr-1" ><i class="fa fa-plus"></i> 新增</button>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<script type="text/template" id="mallgoodstypeList_tpl">
+{@each datas as data,index}
+<tr>
+{@if pageSize&&pageSize>0}
+<td>${((pageNumber-1)*pageSize)+(+index+1)}</td>
+{@else}
+<td>${+index+1}</td>
+{@/if}
+<td>${data.name}</td>
+<td><span class="text-danger">[${data.pinyin}]</span></td>
+<td>
+<a tooltip href="admin/mall/goodstype/editSpec/${data.id}" data-dialogbtn   data-handler="refreshJBoltTable"  data-title="为商品类型【${data.name}】设置规格" data-area="80%,80%" class="jbolt_table_btn"><i class="fa fa-cogs c-info"></i></a>${data.specCount?data.specCount:0}
+</td>
+<td>
+<a tooltip href="admin/mall/goodstype/editAttr/${data.id}" data-dialogbtn data-handler="refreshJBoltTable"  data-title="为商品类型【${data.name}】设置属性" data-area="80%,80%" class="jbolt_table_btn"><i class="fa fa-cogs c-info"></i></a>${data.attrCount?data.attrCount:0}
+</td>
+<td>
+<a tooltip href="admin/mall/goodstypebrand/${data.id}" data-dialogbtn  data-handler="refreshJBoltTable"  data-title="为商品类型【${data.name}】关联品牌" data-area="80%,80%" class="jbolt_table_btn"><i class="fa fa-cogs c-info"></i></a>${data.brandCount?data.brandCount:0}
+</td>
+<td>${data.remark}</td>
+<td><img data-switchbtn data-value="${data.enable}" data-url="admin/mall/goodstype/toggleEnable/${data.id}"/></td>
+<td>
+<a  tooltip  title="编辑"  href="admin/mall/goodstype/edit/${data.id}" data-scroll="yes" data-handler="refreshJBoltTable" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a  tooltip  title="删除"  href="admin/mall/goodstype/delete/${data.id}" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+<a href="admin/mall/goodstype/up/${data.id}" data-ajaxbtn data-loading="执行中 "  tooltip  data-title="上移"   data-handler="moveUp" class="jbolt_table_btn"><i class="fa fa-arrow-up c-info"></i></a>
+<a href="admin/mall/goodstype/down/${data.id}" data-ajaxbtn data-loading="执行中 "  tooltip  data-title="下移"  data-handler="moveDown" class="jbolt_table_btn"><i class="fa fa-arrow-down c-info"></i></a>
+</td>
+</tr>
+{@/each}
+</script>
+
+<table class="table_striped text-center thead_font_normal" 
+data-jbolttable
+data-height="fill"
+data-conditions-form="mallgoodstypeForm"
+data-fixed-columns-left="1,2"
+data-fixed-columns-right="8,9"
+data-ajax="true"
+data-sort="asc"
+data-page="mallGoodsTypePage"
+data-pagesize="15"
+data-bind-elements="#mallgoodsTypeAddBtn,#mallgoodsTypeInitRankBtn"
+data-url="admin/mall/goodstype/datas"
+data-rowtpl="mallgoodstypeList_tpl"
+>
+<thead>
+<tr><th data-width="60" data-column="index">序号</th><th data-width="200"  data-nochange>类型名称</th><th data-width="200"  data-nochange>拼音码</th><th data-width="120" data-nochange>规格管理</th><th  data-width="120" data-nochange>属性管理</th><th  data-width="120" data-nochange>关联品牌</th><th data-min-width="300">备注</th><th  data-width="120"  data-nochange>启用/禁用</th><th  data-width="150"  data-nochange>操作</th></tr>
+</thead>
+</table>	
+</div>
+</div>
+#end
+#define js()
+<script>
+$(function(){
+});
+</script>
+#end
+

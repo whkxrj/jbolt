@@ -1,0 +1,36 @@
+#@adminDialogLayout()
+#define main()
+<div class="jbolt_page">
+<div class="jbolt_page_content">
+<div class="card">
+	<div class="card-header">ajaxPortal加载 - filterTable</div>
+	<div class="card-body">
+		切换显示JBoltInput绑定的隐藏域
+		<img src="assets/img/off.png" data-switchbtn  data-handler="toggleVisiable('#demoHidden_userid1',this)"/>
+		<div style="display:none;" id="demoHidden_userid1">
+			<input type="text" name="demoUserId1" id="demoUserId1" value="#(demoUserId1??)" />
+	 	</div>
+	<div class="form-group mt-3">
+	<input type="text" style="width:300px"   autocomplete="off" name="demoUserName1" value="#(demoUserName1??)"  class="form-control"  placeholder="=选择用户=" 
+	data-jboltinput
+	data-load-type="ajaxportal"
+	data-url="demo/jboltinput/ajaxPortalTable"
+	data-hidden-input="demoUserId1"  
+	data-filter-handler="filterTable"
+	data-width="500"
+	data-height="300"
+	/>
+</div>
+	</div>
+</div>
+</div>
+</div>
+#end
+
+#define js()
+<script>
+$(function(){
+	
+})
+</script>
+#end

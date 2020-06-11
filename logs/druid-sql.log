@@ -1,0 +1,1395 @@
+[2020-06-11 10:51:20.817] DEBUG 134 statementLog - {conn-10001, stmt-20000} executed. set names utf8mb4
+[2020-06-11 10:51:20.900] DEBUG 134 statementLog - {conn-10001, stmt-20001} executed. select * from `jb_application` where 1 = 2
+[2020-06-11 10:51:20.910] DEBUG 134 statementLog - {conn-10001, stmt-20002} executed. select * from `jb_brand` where 1 = 2
+[2020-06-11 10:51:20.919] DEBUG 134 statementLog - {conn-10001, stmt-20003} executed. select * from `jb_change_log` where 1 = 2
+[2020-06-11 10:51:20.924] DEBUG 134 statementLog - {conn-10001, stmt-20004} executed. select * from `jb_demotable` where 1 = 2
+[2020-06-11 10:51:20.928] DEBUG 134 statementLog - {conn-10001, stmt-20005} executed. select * from `jb_dictionary` where 1 = 2
+[2020-06-11 10:51:20.933] DEBUG 134 statementLog - {conn-10001, stmt-20006} executed. select * from `jb_dictionary_type` where 1 = 2
+[2020-06-11 10:51:20.938] DEBUG 134 statementLog - {conn-10001, stmt-20007} executed. select * from `jb_download_log` where 1 = 2
+[2020-06-11 10:51:20.942] DEBUG 134 statementLog - {conn-10001, stmt-20008} executed. select * from `jb_global_config` where 1 = 2
+[2020-06-11 10:51:20.951] DEBUG 134 statementLog - {conn-10001, stmt-20009} executed. select * from `jb_goods` where 1 = 2
+[2020-06-11 10:51:20.956] DEBUG 134 statementLog - {conn-10001, stmt-20010} executed. select * from `jb_goods_attr` where 1 = 2
+[2020-06-11 10:51:20.958] DEBUG 134 statementLog - {conn-10001, stmt-20011} executed. select * from `jb_goods_back_category` where 1 = 2
+[2020-06-11 10:51:20.961] DEBUG 134 statementLog - {conn-10001, stmt-20012} executed. select * from `jb_goods_element_content` where 1 = 2
+[2020-06-11 10:51:20.965] DEBUG 134 statementLog - {conn-10001, stmt-20013} executed. select * from `jb_goods_group` where 1 = 2
+[2020-06-11 10:51:20.970] DEBUG 134 statementLog - {conn-10001, stmt-20014} executed. select * from `jb_goods_html_content` where 1 = 2
+[2020-06-11 10:51:20.975] DEBUG 134 statementLog - {conn-10001, stmt-20015} executed. select * from `jb_goods_type` where 1 = 2
+[2020-06-11 10:51:20.984] DEBUG 134 statementLog - {conn-10001, stmt-20016} executed. select * from `jb_goods_type_brand` where 1 = 2
+[2020-06-11 10:51:20.986] DEBUG 134 statementLog - {conn-10001, stmt-20017} executed. select * from `jb_jbolt_file` where 1 = 2
+[2020-06-11 10:51:20.988] DEBUG 134 statementLog - {conn-10001, stmt-20018} executed. select * from `jb_jbolt_version` where 1 = 2
+[2020-06-11 10:51:20.993] DEBUG 134 statementLog - {conn-10001, stmt-20019} executed. select * from `jb_jbolt_version_file` where 1 = 2
+[2020-06-11 10:51:20.995] DEBUG 134 statementLog - {conn-10001, stmt-20020} executed. select * from `jb_login_log` where 1 = 2
+[2020-06-11 10:51:20.998] DEBUG 134 statementLog - {conn-10001, stmt-20021} executed. select * from `jb_mall` where 1 = 2
+[2020-06-11 10:51:21.002] DEBUG 134 statementLog - {conn-10001, stmt-20022} executed. select * from `jb_order` where 1 = 2
+[2020-06-11 10:51:21.005] DEBUG 134 statementLog - {conn-10001, stmt-20023} executed. select * from `jb_order_item` where 1 = 2
+[2020-06-11 10:51:21.009] DEBUG 134 statementLog - {conn-10001, stmt-20024} executed. select * from `jb_order_shipping` where 1 = 2
+[2020-06-11 10:51:21.014] DEBUG 134 statementLog - {conn-10001, stmt-20025} executed. select * from `jb_permission` where 1 = 2
+[2020-06-11 10:51:21.017] DEBUG 134 statementLog - {conn-10001, stmt-20026} executed. select * from `jb_remote_login_log` where 1 = 2
+[2020-06-11 10:51:21.019] DEBUG 134 statementLog - {conn-10001, stmt-20027} executed. select * from `jb_role` where 1 = 2
+[2020-06-11 10:51:21.021] DEBUG 134 statementLog - {conn-10001, stmt-20028} executed. select * from `jb_role_permission` where 1 = 2
+[2020-06-11 10:51:21.024] DEBUG 134 statementLog - {conn-10001, stmt-20029} executed. select * from `jb_shelf` where 1 = 2
+[2020-06-11 10:51:21.027] DEBUG 134 statementLog - {conn-10001, stmt-20030} executed. select * from `jb_shelf_activity` where 1 = 2
+[2020-06-11 10:51:21.031] DEBUG 134 statementLog - {conn-10001, stmt-20031} executed. select * from `jb_shelf_carousel` where 1 = 2
+[2020-06-11 10:51:21.034] DEBUG 134 statementLog - {conn-10001, stmt-20032} executed. select * from `jb_shelf_element` where 1 = 2
+[2020-06-11 10:51:21.037] DEBUG 134 statementLog - {conn-10001, stmt-20033} executed. select * from `jb_shelf_goods_floor` where 1 = 2
+[2020-06-11 10:51:21.042] DEBUG 134 statementLog - {conn-10001, stmt-20034} executed. select * from `jb_shelf_goods_group` where 1 = 2
+[2020-06-11 10:51:21.052] DEBUG 134 statementLog - {conn-10001, stmt-20035} executed. select * from `jb_sku` where 1 = 2
+[2020-06-11 10:51:21.055] DEBUG 134 statementLog - {conn-10001, stmt-20036} executed. select * from `jb_sku_item` where 1 = 2
+[2020-06-11 10:51:21.058] DEBUG 134 statementLog - {conn-10001, stmt-20037} executed. select * from `jb_spec` where 1 = 2
+[2020-06-11 10:51:21.060] DEBUG 134 statementLog - {conn-10001, stmt-20038} executed. select * from `jb_spec_item` where 1 = 2
+[2020-06-11 10:51:21.063] DEBUG 134 statementLog - {conn-10001, stmt-20039} executed. select * from `jb_system_log` where 1 = 2
+[2020-06-11 10:51:21.068] DEBUG 134 statementLog - {conn-10001, stmt-20040} executed. select * from `jb_update_libs` where 1 = 2
+[2020-06-11 10:51:21.071] DEBUG 134 statementLog - {conn-10001, stmt-20041} executed. select * from `jb_user` where 1 = 2
+[2020-06-11 10:51:21.073] DEBUG 134 statementLog - {conn-10001, stmt-20042} executed. select * from `jb_user_config` where 1 = 2
+[2020-06-11 10:51:21.079] DEBUG 134 statementLog - {conn-10001, stmt-20043} executed. select * from `jb_wechat_article` where 1 = 2
+[2020-06-11 10:51:21.081] DEBUG 134 statementLog - {conn-10001, stmt-20044} executed. select * from `jb_wechat_autoreply` where 1 = 2
+[2020-06-11 10:51:21.084] DEBUG 134 statementLog - {conn-10001, stmt-20045} executed. select * from `jb_wechat_config` where 1 = 2
+[2020-06-11 10:51:21.085] DEBUG 134 statementLog - {conn-10001, stmt-20046} executed. select * from `jb_wechat_keywords` where 1 = 2
+[2020-06-11 10:51:21.087] DEBUG 134 statementLog - {conn-10001, stmt-20047} executed. select * from `jb_wechat_media` where 1 = 2
+[2020-06-11 10:51:21.089] DEBUG 134 statementLog - {conn-10001, stmt-20048} executed. select * from `jb_wechat_menu` where 1 = 2
+[2020-06-11 10:51:21.090] DEBUG 134 statementLog - {conn-10001, stmt-20049} executed. select * from `jb_wechat_mpinfo` where 1 = 2
+[2020-06-11 10:51:21.092] DEBUG 134 statementLog - {conn-10001, stmt-20050} executed. select * from `jb_wechat_reply_content` where 1 = 2
+[2020-06-11 10:51:21.094] DEBUG 134 statementLog - {conn-10001, stmt-20051} executed. select * from `jb_wechat_user` where 1 = 2
+[2020-06-11 10:51:21.908] DEBUG 134 statementLog - {conn-10001, pstmt-20052} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ACTION_REPORT_WRITER'
+limit 0, 1
+[2020-06-11 10:51:21.917] DEBUG 134 statementLog - {conn-10001, pstmt-20053} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_AUTO_CACHE_LOG'
+limit 0, 1
+[2020-06-11 10:51:21.936] DEBUG 134 statementLog - {conn-10001, pstmt-20054} executed. select * from jb_user  where 1=1 
+  and  is_system_admin = 1 
+  order by rand() asc limit 1
+
+[2020-06-11 10:51:21.946] DEBUG 134 statementLog - {conn-10001, pstmt-20055} executed. select id
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+	and id != -1
+limit 0, 1
+[2020-06-11 10:51:21.952] DEBUG 134 statementLog - {conn-10001, pstmt-20056} executed. select * from jb_global_config  where 1=1 
+  and  config_key = 'ASSETS_VERSION' 
+ limit 1
+
+[2020-06-11 10:51:21.955] DEBUG 134 statementLog - {conn-10001, pstmt-20057} executed. select *
+from `jb_global_config`
+where `id` = 29
+[2020-06-11 10:51:21.989] DEBUG 134 statementLog - {conn-10001, pstmt-20058} executed. update `jb_global_config`
+set `config_value` = '20200611105121953', `update_time` = '2020-06-11'
+where `id` = 29
+[2020-06-11 10:51:21.991] DEBUG 134 statementLog - {conn-10001, pstmt-20059} executed. select *
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+limit 0, 1
+[2020-06-11 10:51:22.001] DEBUG 134 statementLog - {conn-10001, pstmt-20060} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 10:51:22.021] DEBUG 134 statementLog - {conn-10001, pstmt-20061} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 29, 6, '<span class=''text-danger''>[总管理(admin)]</span>更新全局配置<span class=''text-danger''>[系统静态资源版本号]</span>'
+	, 2, 'admin/globalconfig/show/29', 1, '总管理')
+[2020-06-11 10:51:22.031] DEBUG 134 statementLog - {conn-10001, pstmt-20062} executed. select * from jb_wechat_mpinfo where 1=1 
+  and  enable = 1 
+
+[2020-06-11 11:18:43.343] DEBUG 134 statementLog - {conn-10001, stmt-20000} executed. set names utf8mb4
+[2020-06-11 11:18:43.391] DEBUG 134 statementLog - {conn-10001, stmt-20001} executed. select * from `jb_application` where 1 = 2
+[2020-06-11 11:18:43.396] DEBUG 134 statementLog - {conn-10001, stmt-20002} executed. select * from `jb_brand` where 1 = 2
+[2020-06-11 11:18:43.397] DEBUG 134 statementLog - {conn-10001, stmt-20003} executed. select * from `jb_change_log` where 1 = 2
+[2020-06-11 11:18:43.399] DEBUG 134 statementLog - {conn-10001, stmt-20004} executed. select * from `jb_demotable` where 1 = 2
+[2020-06-11 11:18:43.401] DEBUG 134 statementLog - {conn-10001, stmt-20005} executed. select * from `jb_dictionary` where 1 = 2
+[2020-06-11 11:18:43.403] DEBUG 134 statementLog - {conn-10001, stmt-20006} executed. select * from `jb_dictionary_type` where 1 = 2
+[2020-06-11 11:18:43.404] DEBUG 134 statementLog - {conn-10001, stmt-20007} executed. select * from `jb_download_log` where 1 = 2
+[2020-06-11 11:18:43.406] DEBUG 134 statementLog - {conn-10001, stmt-20008} executed. select * from `jb_global_config` where 1 = 2
+[2020-06-11 11:18:43.408] DEBUG 134 statementLog - {conn-10001, stmt-20009} executed. select * from `jb_goods` where 1 = 2
+[2020-06-11 11:18:43.409] DEBUG 134 statementLog - {conn-10001, stmt-20010} executed. select * from `jb_goods_attr` where 1 = 2
+[2020-06-11 11:18:43.410] DEBUG 134 statementLog - {conn-10001, stmt-20011} executed. select * from `jb_goods_back_category` where 1 = 2
+[2020-06-11 11:18:43.412] DEBUG 134 statementLog - {conn-10001, stmt-20012} executed. select * from `jb_goods_element_content` where 1 = 2
+[2020-06-11 11:18:43.413] DEBUG 134 statementLog - {conn-10001, stmt-20013} executed. select * from `jb_goods_group` where 1 = 2
+[2020-06-11 11:18:43.414] DEBUG 134 statementLog - {conn-10001, stmt-20014} executed. select * from `jb_goods_html_content` where 1 = 2
+[2020-06-11 11:18:43.416] DEBUG 134 statementLog - {conn-10001, stmt-20015} executed. select * from `jb_goods_type` where 1 = 2
+[2020-06-11 11:18:43.418] DEBUG 134 statementLog - {conn-10001, stmt-20016} executed. select * from `jb_goods_type_brand` where 1 = 2
+[2020-06-11 11:18:43.419] DEBUG 134 statementLog - {conn-10001, stmt-20017} executed. select * from `jb_jbolt_file` where 1 = 2
+[2020-06-11 11:18:43.421] DEBUG 134 statementLog - {conn-10001, stmt-20018} executed. select * from `jb_jbolt_version` where 1 = 2
+[2020-06-11 11:18:43.422] DEBUG 134 statementLog - {conn-10001, stmt-20019} executed. select * from `jb_jbolt_version_file` where 1 = 2
+[2020-06-11 11:18:43.424] DEBUG 134 statementLog - {conn-10001, stmt-20020} executed. select * from `jb_login_log` where 1 = 2
+[2020-06-11 11:18:43.426] DEBUG 134 statementLog - {conn-10001, stmt-20021} executed. select * from `jb_mall` where 1 = 2
+[2020-06-11 11:18:43.427] DEBUG 134 statementLog - {conn-10001, stmt-20022} executed. select * from `jb_order` where 1 = 2
+[2020-06-11 11:18:43.429] DEBUG 134 statementLog - {conn-10001, stmt-20023} executed. select * from `jb_order_item` where 1 = 2
+[2020-06-11 11:18:43.431] DEBUG 134 statementLog - {conn-10001, stmt-20024} executed. select * from `jb_order_shipping` where 1 = 2
+[2020-06-11 11:18:43.433] DEBUG 134 statementLog - {conn-10001, stmt-20025} executed. select * from `jb_permission` where 1 = 2
+[2020-06-11 11:18:43.435] DEBUG 134 statementLog - {conn-10001, stmt-20026} executed. select * from `jb_remote_login_log` where 1 = 2
+[2020-06-11 11:18:43.437] DEBUG 134 statementLog - {conn-10001, stmt-20027} executed. select * from `jb_role` where 1 = 2
+[2020-06-11 11:18:43.438] DEBUG 134 statementLog - {conn-10001, stmt-20028} executed. select * from `jb_role_permission` where 1 = 2
+[2020-06-11 11:18:43.440] DEBUG 134 statementLog - {conn-10001, stmt-20029} executed. select * from `jb_shelf` where 1 = 2
+[2020-06-11 11:18:43.441] DEBUG 134 statementLog - {conn-10001, stmt-20030} executed. select * from `jb_shelf_activity` where 1 = 2
+[2020-06-11 11:18:43.443] DEBUG 134 statementLog - {conn-10001, stmt-20031} executed. select * from `jb_shelf_carousel` where 1 = 2
+[2020-06-11 11:18:43.444] DEBUG 134 statementLog - {conn-10001, stmt-20032} executed. select * from `jb_shelf_element` where 1 = 2
+[2020-06-11 11:18:43.446] DEBUG 134 statementLog - {conn-10001, stmt-20033} executed. select * from `jb_shelf_goods_floor` where 1 = 2
+[2020-06-11 11:18:43.447] DEBUG 134 statementLog - {conn-10001, stmt-20034} executed. select * from `jb_shelf_goods_group` where 1 = 2
+[2020-06-11 11:18:43.448] DEBUG 134 statementLog - {conn-10001, stmt-20035} executed. select * from `jb_sku` where 1 = 2
+[2020-06-11 11:18:43.450] DEBUG 134 statementLog - {conn-10001, stmt-20036} executed. select * from `jb_sku_item` where 1 = 2
+[2020-06-11 11:18:43.452] DEBUG 134 statementLog - {conn-10001, stmt-20037} executed. select * from `jb_spec` where 1 = 2
+[2020-06-11 11:18:43.453] DEBUG 134 statementLog - {conn-10001, stmt-20038} executed. select * from `jb_spec_item` where 1 = 2
+[2020-06-11 11:18:43.454] DEBUG 134 statementLog - {conn-10001, stmt-20039} executed. select * from `jb_system_log` where 1 = 2
+[2020-06-11 11:18:43.456] DEBUG 134 statementLog - {conn-10001, stmt-20040} executed. select * from `jb_update_libs` where 1 = 2
+[2020-06-11 11:18:43.457] DEBUG 134 statementLog - {conn-10001, stmt-20041} executed. select * from `jb_user` where 1 = 2
+[2020-06-11 11:18:43.458] DEBUG 134 statementLog - {conn-10001, stmt-20042} executed. select * from `jb_user_config` where 1 = 2
+[2020-06-11 11:18:43.459] DEBUG 134 statementLog - {conn-10001, stmt-20043} executed. select * from `jb_wechat_article` where 1 = 2
+[2020-06-11 11:18:43.461] DEBUG 134 statementLog - {conn-10001, stmt-20044} executed. select * from `jb_wechat_autoreply` where 1 = 2
+[2020-06-11 11:18:43.462] DEBUG 134 statementLog - {conn-10001, stmt-20045} executed. select * from `jb_wechat_config` where 1 = 2
+[2020-06-11 11:18:43.464] DEBUG 134 statementLog - {conn-10001, stmt-20046} executed. select * from `jb_wechat_keywords` where 1 = 2
+[2020-06-11 11:18:43.465] DEBUG 134 statementLog - {conn-10001, stmt-20047} executed. select * from `jb_wechat_media` where 1 = 2
+[2020-06-11 11:18:43.466] DEBUG 134 statementLog - {conn-10001, stmt-20048} executed. select * from `jb_wechat_menu` where 1 = 2
+[2020-06-11 11:18:43.468] DEBUG 134 statementLog - {conn-10001, stmt-20049} executed. select * from `jb_wechat_mpinfo` where 1 = 2
+[2020-06-11 11:18:43.469] DEBUG 134 statementLog - {conn-10001, stmt-20050} executed. select * from `jb_wechat_reply_content` where 1 = 2
+[2020-06-11 11:18:43.471] DEBUG 134 statementLog - {conn-10001, stmt-20051} executed. select * from `jb_wechat_user` where 1 = 2
+[2020-06-11 11:18:44.071] DEBUG 134 statementLog - {conn-10001, pstmt-20052} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ACTION_REPORT_WRITER'
+limit 0, 1
+[2020-06-11 11:18:44.075] DEBUG 134 statementLog - {conn-10001, pstmt-20053} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_AUTO_CACHE_LOG'
+limit 0, 1
+[2020-06-11 11:18:44.086] DEBUG 134 statementLog - {conn-10001, pstmt-20054} executed. select * from jb_user  where 1=1 
+  and  is_system_admin = 1 
+  order by rand() asc limit 1
+
+[2020-06-11 11:18:44.092] DEBUG 134 statementLog - {conn-10001, pstmt-20055} executed. select id
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+	and id != -1
+limit 0, 1
+[2020-06-11 11:18:44.097] DEBUG 134 statementLog - {conn-10001, pstmt-20056} executed. select * from jb_global_config  where 1=1 
+  and  config_key = 'ASSETS_VERSION' 
+ limit 1
+
+[2020-06-11 11:18:44.100] DEBUG 134 statementLog - {conn-10001, pstmt-20057} executed. select *
+from `jb_global_config`
+where `id` = 29
+[2020-06-11 11:18:44.153] DEBUG 134 statementLog - {conn-10001, pstmt-20058} executed. update `jb_global_config`
+set `config_value` = '20200611111844098', `update_time` = '2020-06-11'
+where `id` = 29
+[2020-06-11 11:18:44.156] DEBUG 134 statementLog - {conn-10001, pstmt-20059} executed. select *
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+limit 0, 1
+[2020-06-11 11:18:44.205] DEBUG 134 statementLog - {conn-10001, pstmt-20060} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 11:18:44.222] DEBUG 134 statementLog - {conn-10001, pstmt-20061} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 29, 6, '<span class=''text-danger''>[总管理(admin)]</span>更新全局配置<span class=''text-danger''>[系统静态资源版本号]</span>'
+	, 2, 'admin/globalconfig/show/29', 1, '总管理')
+[2020-06-11 11:18:44.232] DEBUG 134 statementLog - {conn-10001, pstmt-20062} executed. select * from jb_wechat_mpinfo where 1=1 
+  and  enable = 1 
+
+[2020-06-11 11:19:33.511] DEBUG 134 statementLog - {conn-10001, pstmt-20063} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_NAME'
+limit 0, 1
+[2020-06-11 11:19:33.514] DEBUG 134 statementLog - {conn-10001, pstmt-20064} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+limit 0, 1
+[2020-06-11 11:19:33.516] DEBUG 134 statementLog - {conn-10001, pstmt-20065} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+limit 0, 1
+[2020-06-11 11:19:33.517] DEBUG 134 statementLog - {conn-10001, pstmt-20066} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG'
+limit 0, 1
+[2020-06-11 11:19:33.523] DEBUG 134 statementLog - {conn-10001, pstmt-20067} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_USE_CAPTURE'
+limit 0, 1
+[2020-06-11 11:19:33.526] DEBUG 134 statementLog - {conn-10001, pstmt-20068} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_LINK'
+limit 0, 1
+[2020-06-11 11:19:33.529] DEBUG 134 statementLog - {conn-10001, pstmt-20069} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_COMPANY'
+limit 0, 1
+[2020-06-11 11:19:33.530] DEBUG 134 statementLog - {conn-10001, pstmt-20070} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_NEST'
+limit 0, 1
+[2020-06-11 11:19:33.643] DEBUG 134 statementLog - {conn-10001, pstmt-20071} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_CAPTURE_TYPE'
+limit 0, 1
+[2020-06-11 11:19:39.209] DEBUG 134 statementLog - {conn-10001, pstmt-20072} executed. select * from jb_user  where 1=1 
+  and  username = 'admin' 
+ limit 1
+
+[2020-06-11 11:19:39.296] DEBUG 134 statementLog - {conn-10001, pstmt-20073} executed. insert into `jb_login_log` (`browser_engine_name`, `browser_engine_version`, `browser_name`, `browser_version`, `create_time`
+	, `is_browser`, `is_mobile`, `login_address`, `login_ip`, `login_state`
+	, `login_time`, `os_name`, `os_platform_name`, `user_id`, `username`)
+values ('Webkit', '537.36', 'MSEdge', '83.0.478.45', '2020-06-11'
+	, true, false, 'XXXX', '127.0.0.1', 1
+	, '2020-06-11', 'Windows 10 or Windows Server 2016', 'Windows', 1, 'admin')
+[2020-06-11 11:19:39.304] DEBUG 134 statementLog - {conn-10001, pstmt-20074} executed. update `jb_user`
+set `is_remote_login` = false, `login_city` = null, `login_ip` = '127.0.0.1', `login_province` = null, `login_time` = '2020-06-11'
+where `id` = 1
+[2020-06-11 11:19:39.309] DEBUG 134 statementLog - {conn-10001, pstmt-20075} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 11:19:39.310] DEBUG 134 statementLog - {conn-10001, pstmt-20076} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 11:19:39.311] DEBUG 134 statementLog - {conn-10001, pstmt-20077} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_NEST'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 11:19:40.537] DEBUG 134 statementLog - {conn-10001, pstmt-20078} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 11:19:40.543] DEBUG 134 statementLog - {conn-10001, pstmt-20079} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 11:19:40.545] DEBUG 134 statementLog - {conn-10001, pstmt-20080} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+limit 0, 1
+[2020-06-11 11:19:40.547] DEBUG 134 statementLog - {conn-10001, pstmt-20081} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_H50'
+limit 0, 1
+[2020-06-11 11:19:40.549] DEBUG 134 statementLog - {conn-10001, pstmt-20082} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_GLOBAL_SEARCH_SHOW'
+limit 0, 1
+[2020-06-11 11:19:40.551] DEBUG 134 statementLog - {conn-10001, pstmt-20083} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 11:19:40.552] DEBUG 134 statementLog - {conn-10001, pstmt-20084} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+limit 0, 1
+[2020-06-11 11:19:40.566] DEBUG 134 statementLog - {conn-10001, pstmt-20085} executed. select distinct p.* from jb_role_permission rp left join jb_permission as p on p.id=rp.permission_id  where p.is_menu=1 and  rp.role_id in('1')  order by p.sort_rank asc
+[2020-06-11 11:19:40.574] DEBUG 134 statementLog - {conn-10001, pstmt-20086} executed. select * from jb_permission where 1=1 
+  and  is_system_admin_default = 1 
+  and  is_menu = 1 
+  order by sort_rank asc
+[2020-06-11 11:19:40.582] DEBUG 134 statementLog - {conn-10001, pstmt-20087} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_NAV_MENU_DEFAULT_ICON'
+limit 0, 1
+[2020-06-11 11:19:40.598] DEBUG 134 statementLog - {conn-10001, pstmt-20088} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_LOGO'
+limit 0, 1
+[2020-06-11 11:19:43.690] DEBUG 134 statementLog - {conn-10001, pstmt-20089} executed. select id,name from jb_user
+[2020-06-11 11:19:43.696] DEBUG 134 statementLog - {conn-10001, pstmt-20090} executed. select *
+from jb_dictionary_type
+where type_key = 'group'
+limit 0, 1
+[2020-06-11 11:19:43.700] DEBUG 134 statementLog - {conn-10001, pstmt-20091} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 11:19:43.726] DEBUG 134 statementLog - {conn-10001, pstmt-20092} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 11:19:43.734] DEBUG 134 statementLog - {conn-10001, pstmt-20093} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 11:19:43.740] DEBUG 134 statementLog - {conn-10001, pstmt-20094} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 14:43:27.920] DEBUG 134 statementLog - {conn-10001, pstmt-20095} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_NAME'
+limit 0, 1
+[2020-06-11 14:43:27.977] DEBUG 134 statementLog - {conn-10001, pstmt-20096} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_USE_CAPTURE'
+limit 0, 1
+[2020-06-11 14:43:28.279] DEBUG 134 statementLog - {conn-10001, pstmt-20097} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_CAPTURE_TYPE'
+limit 0, 1
+[2020-06-11 14:43:34.469] DEBUG 134 statementLog - {conn-10001, pstmt-20098} executed. select * from jb_user  where 1=1 
+  and  username = 'admin' 
+ limit 1
+
+[2020-06-11 14:43:34.540] DEBUG 134 statementLog - {conn-10001, pstmt-20099} executed. insert into `jb_login_log` (`browser_engine_name`, `browser_engine_version`, `browser_name`, `browser_version`, `create_time`
+	, `is_browser`, `is_mobile`, `login_address`, `login_ip`, `login_state`
+	, `login_time`, `os_name`, `os_platform_name`, `user_id`, `username`)
+values ('Webkit', '537.36', 'MSEdge', '83.0.478.45', '2020-06-11'
+	, true, false, 'XXXX', '127.0.0.1', 1
+	, '2020-06-11', 'Windows 10 or Windows Server 2016', 'Windows', 1, 'admin')
+[2020-06-11 14:43:34.554] DEBUG 134 statementLog - {conn-10001, pstmt-20100} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 14:43:34.578] DEBUG 134 statementLog - {conn-10001, pstmt-20101} executed. update `jb_user`
+set `is_remote_login` = false, `login_city` = null, `login_ip` = '127.0.0.1', `login_province` = null, `login_time` = '2020-06-11'
+where `id` = 1
+[2020-06-11 14:43:34.592] DEBUG 134 statementLog - {conn-10001, pstmt-20102} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 14:43:34.595] DEBUG 134 statementLog - {conn-10001, pstmt-20103} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+limit 0, 1
+[2020-06-11 14:43:34.600] DEBUG 134 statementLog - {conn-10001, pstmt-20104} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 14:43:34.606] DEBUG 134 statementLog - {conn-10001, pstmt-20105} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+limit 0, 1
+[2020-06-11 14:43:34.613] DEBUG 134 statementLog - {conn-10001, pstmt-20106} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_NEST'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 14:43:34.617] DEBUG 134 statementLog - {conn-10001, pstmt-20107} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_NEST'
+limit 0, 1
+[2020-06-11 14:43:35.364] DEBUG 134 statementLog - {conn-10001, pstmt-20108} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 14:44:04.555] DEBUG 134 statementLog - {conn-10001, pstmt-20109} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 14:44:06.399] DEBUG 134 statementLog - {conn-10001, pstmt-20110} executed. select * from jb_global_config where value_type is null
+[2020-06-11 14:44:06.403] DEBUG 134 statementLog - {conn-10001, pstmt-20111} executed. select id
+from jb_global_config
+where config_key = 'WECHAT_MP_SERVER_DOMAIN'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.405] DEBUG 134 statementLog - {conn-10001, pstmt-20112} executed. select id
+from jb_global_config
+where config_key = 'WECHAT_WXA_SERVER_DOMAIN'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.408] DEBUG 134 statementLog - {conn-10001, pstmt-20113} executed. select id
+from jb_global_config
+where config_key = 'WECHAT_ASSETS_SERVER_DOMAIN'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.412] DEBUG 134 statementLog - {conn-10001, pstmt-20114} executed. select id
+from jb_global_config
+where config_key = 'SYSTEM_NAME'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.417] DEBUG 134 statementLog - {conn-10001, pstmt-20115} executed. select id
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_LOGO'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.420] DEBUG 134 statementLog - {conn-10001, pstmt-20116} executed. select id
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_COMPANY'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.422] DEBUG 134 statementLog - {conn-10001, pstmt-20117} executed. select id
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_LINK'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.427] DEBUG 134 statementLog - {conn-10001, pstmt-20118} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.435] DEBUG 134 statementLog - {conn-10001, pstmt-20119} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.437] DEBUG 134 statementLog - {conn-10001, pstmt-20120} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.439] DEBUG 134 statementLog - {conn-10001, pstmt-20121} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_USE_CAPTURE'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.445] DEBUG 134 statementLog - {conn-10001, pstmt-20122} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.451] DEBUG 134 statementLog - {conn-10001, pstmt-20123} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_CAPTURE_TYPE'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.454] DEBUG 134 statementLog - {conn-10001, pstmt-20124} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.459] DEBUG 134 statementLog - {conn-10001, pstmt-20125} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_NEST'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.465] DEBUG 134 statementLog - {conn-10001, pstmt-20126} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_ACTION_REPORT_WRITER'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.471] DEBUG 134 statementLog - {conn-10001, pstmt-20127} executed. select id
+from jb_global_config
+where config_key = 'JBOLT_AUTO_CACHE_LOG'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.474] DEBUG 134 statementLog - {conn-10001, pstmt-20128} executed. select id
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.480] DEBUG 134 statementLog - {conn-10001, pstmt-20129} executed. select id
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_H50'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.487] DEBUG 134 statementLog - {conn-10001, pstmt-20130} executed. select id
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_NAV_MENU_DEFAULT_ICON'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.493] DEBUG 134 statementLog - {conn-10001, pstmt-20131} executed. select id
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_GLOBAL_SEARCH_SHOW'
+	and id != -1
+limit 0, 1
+[2020-06-11 14:44:06.500] DEBUG 134 statementLog - {conn-10001, pstmt-20132} executed. select * from jb_global_config
+[2020-06-11 14:44:08.757] DEBUG 134 statementLog - {conn-10001, pstmt-20133} executed. select * from jb_dictionary_type
+[2020-06-11 15:04:34.755] DEBUG 134 statementLog - {conn-10001, pstmt-20134} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:05:00.861] DEBUG 134 statementLog - {conn-10001, pstmt-20135} executed. select id,name from jb_user
+[2020-06-11 15:05:00.867] DEBUG 134 statementLog - {conn-10001, pstmt-20136} executed. select *
+from jb_dictionary_type
+where type_key = 'group'
+limit 0, 1
+[2020-06-11 15:05:00.875] DEBUG 134 statementLog - {conn-10001, pstmt-20137} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 15:05:00.882] DEBUG 134 statementLog - {conn-10001, pstmt-20138} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 15:05:00.891] DEBUG 134 statementLog - {conn-10001, pstmt-20139} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 15:05:00.910] DEBUG 134 statementLog - {conn-10002, stmt-20140} executed. set names utf8mb4
+[2020-06-11 15:10:13.097] DEBUG 134 statementLog - {conn-10001, stmt-20000} executed. set names utf8mb4
+[2020-06-11 15:10:13.161] DEBUG 134 statementLog - {conn-10001, stmt-20001} executed. select * from `jb_application` where 1 = 2
+[2020-06-11 15:10:13.169] DEBUG 134 statementLog - {conn-10001, stmt-20002} executed. select * from `jb_brand` where 1 = 2
+[2020-06-11 15:10:13.172] DEBUG 134 statementLog - {conn-10001, stmt-20003} executed. select * from `jb_change_log` where 1 = 2
+[2020-06-11 15:10:13.176] DEBUG 134 statementLog - {conn-10001, stmt-20004} executed. select * from `jb_demotable` where 1 = 2
+[2020-06-11 15:10:13.179] DEBUG 134 statementLog - {conn-10001, stmt-20005} executed. select * from `jb_dictionary` where 1 = 2
+[2020-06-11 15:10:13.181] DEBUG 134 statementLog - {conn-10001, stmt-20006} executed. select * from `jb_dictionary_type` where 1 = 2
+[2020-06-11 15:10:13.184] DEBUG 134 statementLog - {conn-10001, stmt-20007} executed. select * from `jb_download_log` where 1 = 2
+[2020-06-11 15:10:13.186] DEBUG 134 statementLog - {conn-10001, stmt-20008} executed. select * from `jb_global_config` where 1 = 2
+[2020-06-11 15:10:13.190] DEBUG 134 statementLog - {conn-10001, stmt-20009} executed. select * from `jb_goods` where 1 = 2
+[2020-06-11 15:10:13.193] DEBUG 134 statementLog - {conn-10001, stmt-20010} executed. select * from `jb_goods_attr` where 1 = 2
+[2020-06-11 15:10:13.196] DEBUG 134 statementLog - {conn-10001, stmt-20011} executed. select * from `jb_goods_back_category` where 1 = 2
+[2020-06-11 15:10:13.199] DEBUG 134 statementLog - {conn-10001, stmt-20012} executed. select * from `jb_goods_element_content` where 1 = 2
+[2020-06-11 15:10:13.202] DEBUG 134 statementLog - {conn-10001, stmt-20013} executed. select * from `jb_goods_group` where 1 = 2
+[2020-06-11 15:10:13.204] DEBUG 134 statementLog - {conn-10001, stmt-20014} executed. select * from `jb_goods_html_content` where 1 = 2
+[2020-06-11 15:10:13.208] DEBUG 134 statementLog - {conn-10001, stmt-20015} executed. select * from `jb_goods_type` where 1 = 2
+[2020-06-11 15:10:13.210] DEBUG 134 statementLog - {conn-10001, stmt-20016} executed. select * from `jb_goods_type_brand` where 1 = 2
+[2020-06-11 15:10:13.213] DEBUG 134 statementLog - {conn-10001, stmt-20017} executed. select * from `jb_jbolt_file` where 1 = 2
+[2020-06-11 15:10:13.216] DEBUG 134 statementLog - {conn-10001, stmt-20018} executed. select * from `jb_jbolt_version` where 1 = 2
+[2020-06-11 15:10:13.219] DEBUG 134 statementLog - {conn-10001, stmt-20019} executed. select * from `jb_jbolt_version_file` where 1 = 2
+[2020-06-11 15:10:13.222] DEBUG 134 statementLog - {conn-10001, stmt-20020} executed. select * from `jb_login_log` where 1 = 2
+[2020-06-11 15:10:13.225] DEBUG 134 statementLog - {conn-10001, stmt-20021} executed. select * from `jb_mall` where 1 = 2
+[2020-06-11 15:10:13.227] DEBUG 134 statementLog - {conn-10001, stmt-20022} executed. select * from `jb_order` where 1 = 2
+[2020-06-11 15:10:13.230] DEBUG 134 statementLog - {conn-10001, stmt-20023} executed. select * from `jb_order_item` where 1 = 2
+[2020-06-11 15:10:13.232] DEBUG 134 statementLog - {conn-10001, stmt-20024} executed. select * from `jb_order_shipping` where 1 = 2
+[2020-06-11 15:10:13.234] DEBUG 134 statementLog - {conn-10001, stmt-20025} executed. select * from `jb_permission` where 1 = 2
+[2020-06-11 15:10:13.237] DEBUG 134 statementLog - {conn-10001, stmt-20026} executed. select * from `jb_remote_login_log` where 1 = 2
+[2020-06-11 15:10:13.240] DEBUG 134 statementLog - {conn-10001, stmt-20027} executed. select * from `jb_role` where 1 = 2
+[2020-06-11 15:10:13.242] DEBUG 134 statementLog - {conn-10001, stmt-20028} executed. select * from `jb_role_permission` where 1 = 2
+[2020-06-11 15:10:13.244] DEBUG 134 statementLog - {conn-10001, stmt-20029} executed. select * from `jb_shelf` where 1 = 2
+[2020-06-11 15:10:13.247] DEBUG 134 statementLog - {conn-10001, stmt-20030} executed. select * from `jb_shelf_activity` where 1 = 2
+[2020-06-11 15:10:13.249] DEBUG 134 statementLog - {conn-10001, stmt-20031} executed. select * from `jb_shelf_carousel` where 1 = 2
+[2020-06-11 15:10:13.251] DEBUG 134 statementLog - {conn-10001, stmt-20032} executed. select * from `jb_shelf_element` where 1 = 2
+[2020-06-11 15:10:13.253] DEBUG 134 statementLog - {conn-10001, stmt-20033} executed. select * from `jb_shelf_goods_floor` where 1 = 2
+[2020-06-11 15:10:13.256] DEBUG 134 statementLog - {conn-10001, stmt-20034} executed. select * from `jb_shelf_goods_group` where 1 = 2
+[2020-06-11 15:10:13.258] DEBUG 134 statementLog - {conn-10001, stmt-20035} executed. select * from `jb_sku` where 1 = 2
+[2020-06-11 15:10:13.261] DEBUG 134 statementLog - {conn-10001, stmt-20036} executed. select * from `jb_sku_item` where 1 = 2
+[2020-06-11 15:10:13.263] DEBUG 134 statementLog - {conn-10001, stmt-20037} executed. select * from `jb_spec` where 1 = 2
+[2020-06-11 15:10:13.266] DEBUG 134 statementLog - {conn-10001, stmt-20038} executed. select * from `jb_spec_item` where 1 = 2
+[2020-06-11 15:10:13.268] DEBUG 134 statementLog - {conn-10001, stmt-20039} executed. select * from `jb_system_log` where 1 = 2
+[2020-06-11 15:10:13.270] DEBUG 134 statementLog - {conn-10001, stmt-20040} executed. select * from `jb_update_libs` where 1 = 2
+[2020-06-11 15:10:13.273] DEBUG 134 statementLog - {conn-10001, stmt-20041} executed. select * from `jb_user` where 1 = 2
+[2020-06-11 15:10:13.275] DEBUG 134 statementLog - {conn-10001, stmt-20042} executed. select * from `jb_user_config` where 1 = 2
+[2020-06-11 15:10:13.278] DEBUG 134 statementLog - {conn-10001, stmt-20043} executed. select * from `jb_wechat_article` where 1 = 2
+[2020-06-11 15:10:13.280] DEBUG 134 statementLog - {conn-10001, stmt-20044} executed. select * from `jb_wechat_autoreply` where 1 = 2
+[2020-06-11 15:10:13.281] DEBUG 134 statementLog - {conn-10001, stmt-20045} executed. select * from `jb_wechat_config` where 1 = 2
+[2020-06-11 15:10:13.283] DEBUG 134 statementLog - {conn-10001, stmt-20046} executed. select * from `jb_wechat_keywords` where 1 = 2
+[2020-06-11 15:10:13.285] DEBUG 134 statementLog - {conn-10001, stmt-20047} executed. select * from `jb_wechat_media` where 1 = 2
+[2020-06-11 15:10:13.287] DEBUG 134 statementLog - {conn-10001, stmt-20048} executed. select * from `jb_wechat_menu` where 1 = 2
+[2020-06-11 15:10:13.289] DEBUG 134 statementLog - {conn-10001, stmt-20049} executed. select * from `jb_wechat_mpinfo` where 1 = 2
+[2020-06-11 15:10:13.292] DEBUG 134 statementLog - {conn-10001, stmt-20050} executed. select * from `jb_wechat_reply_content` where 1 = 2
+[2020-06-11 15:10:13.294] DEBUG 134 statementLog - {conn-10001, stmt-20051} executed. select * from `jb_wechat_user` where 1 = 2
+[2020-06-11 15:10:14.041] DEBUG 134 statementLog - {conn-10001, pstmt-20052} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ACTION_REPORT_WRITER'
+limit 0, 1
+[2020-06-11 15:10:14.045] DEBUG 134 statementLog - {conn-10001, pstmt-20053} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_AUTO_CACHE_LOG'
+limit 0, 1
+[2020-06-11 15:10:14.059] DEBUG 134 statementLog - {conn-10001, pstmt-20054} executed. select * from jb_user  where 1=1 
+  and  is_system_admin = 1 
+  order by rand() asc limit 1
+
+[2020-06-11 15:10:14.064] DEBUG 134 statementLog - {conn-10001, pstmt-20055} executed. select id
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+	and id != -1
+limit 0, 1
+[2020-06-11 15:10:14.069] DEBUG 134 statementLog - {conn-10001, pstmt-20056} executed. select * from jb_global_config  where 1=1 
+  and  config_key = 'ASSETS_VERSION' 
+ limit 1
+
+[2020-06-11 15:10:14.072] DEBUG 134 statementLog - {conn-10001, pstmt-20057} executed. select *
+from `jb_global_config`
+where `id` = 29
+[2020-06-11 15:10:14.129] DEBUG 134 statementLog - {conn-10001, pstmt-20058} executed. update `jb_global_config`
+set `config_value` = '20200611151014070', `update_time` = '2020-06-11'
+where `id` = 29
+[2020-06-11 15:10:14.131] DEBUG 134 statementLog - {conn-10001, pstmt-20059} executed. select *
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+limit 0, 1
+[2020-06-11 15:10:14.135] DEBUG 134 statementLog - {conn-10001, pstmt-20060} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 15:10:14.147] DEBUG 134 statementLog - {conn-10001, pstmt-20061} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 29, 6, '<span class=''text-danger''>[总管理(admin)]</span>更新全局配置<span class=''text-danger''>[系统静态资源版本号]</span>'
+	, 2, 'admin/globalconfig/show/29', 1, '总管理')
+[2020-06-11 15:10:14.156] DEBUG 134 statementLog - {conn-10001, pstmt-20062} executed. select * from jb_wechat_mpinfo where 1=1 
+  and  enable = 1 
+
+[2020-06-11 15:11:12.465] DEBUG 134 statementLog - {conn-10001, pstmt-20063} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_NAME'
+limit 0, 1
+[2020-06-11 15:11:12.467] DEBUG 134 statementLog - {conn-10001, pstmt-20064} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+limit 0, 1
+[2020-06-11 15:11:12.469] DEBUG 134 statementLog - {conn-10001, pstmt-20065} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+limit 0, 1
+[2020-06-11 15:11:12.471] DEBUG 134 statementLog - {conn-10001, pstmt-20066} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG'
+limit 0, 1
+[2020-06-11 15:11:12.480] DEBUG 134 statementLog - {conn-10001, pstmt-20067} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_USE_CAPTURE'
+limit 0, 1
+[2020-06-11 15:11:12.483] DEBUG 134 statementLog - {conn-10001, pstmt-20068} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_LINK'
+limit 0, 1
+[2020-06-11 15:11:12.485] DEBUG 134 statementLog - {conn-10001, pstmt-20069} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_COMPANY'
+limit 0, 1
+[2020-06-11 15:11:12.487] DEBUG 134 statementLog - {conn-10001, pstmt-20070} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_NEST'
+limit 0, 1
+[2020-06-11 15:11:12.508] DEBUG 134 statementLog - {conn-10001, pstmt-20071} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_CAPTURE_TYPE'
+limit 0, 1
+[2020-06-11 15:11:20.475] DEBUG 134 statementLog - {conn-10001, pstmt-20072} executed. select * from jb_user  where 1=1 
+  and  username = 'admin' 
+ limit 1
+
+[2020-06-11 15:11:20.547] DEBUG 134 statementLog - {conn-10001, pstmt-20073} executed. insert into `jb_login_log` (`browser_engine_name`, `browser_engine_version`, `browser_name`, `browser_version`, `create_time`
+	, `is_browser`, `is_mobile`, `login_address`, `login_ip`, `login_state`
+	, `login_time`, `os_name`, `os_platform_name`, `user_id`, `username`)
+values ('Webkit', '537.36', 'MSEdge', '83.0.478.45', '2020-06-11'
+	, true, false, 'XXXX', '127.0.0.1', 1
+	, '2020-06-11', 'Windows 10 or Windows Server 2016', 'Windows', 1, 'admin')
+[2020-06-11 15:11:20.555] DEBUG 134 statementLog - {conn-10001, pstmt-20074} executed. update `jb_user`
+set `is_remote_login` = false, `login_city` = null, `login_ip` = '127.0.0.1', `login_province` = null, `login_time` = '2020-06-11'
+where `id` = 1
+[2020-06-11 15:11:20.560] DEBUG 134 statementLog - {conn-10001, pstmt-20075} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:11:20.561] DEBUG 134 statementLog - {conn-10001, pstmt-20076} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:11:20.563] DEBUG 134 statementLog - {conn-10001, pstmt-20077} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_NEST'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:11:21.317] DEBUG 134 statementLog - {conn-10001, pstmt-20078} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 15:11:21.369] DEBUG 134 statementLog - {conn-10001, pstmt-20079} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:11:23.683] DEBUG 134 statementLog - {conn-10001, pstmt-20080} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:12:29.549] DEBUG 134 statementLog - {conn-10001, pstmt-20081} executed. select id
+from jb_permission
+where title = 'Demo01教程'
+	and pid = 0
+	and id != -1
+limit 0, 1
+[2020-06-11 15:12:29.551] DEBUG 134 statementLog - {conn-10001, pstmt-20082} executed. select id
+from jb_permission
+where permission_key = 'autoselect1'
+	and id != -1
+limit 0, 1
+[2020-06-11 15:12:29.555] DEBUG 134 statementLog - {conn-10001, pstmt-20083} executed. select count(*) from jb_permission where 1=1 
+  and  pid = 0 
+
+[2020-06-11 15:12:29.648] DEBUG 134 statementLog - {conn-10001, pstmt-20084} executed. insert into `jb_permission` (`icons`, `is_menu`, `is_system_admin_default`, `is_target_blank`, `open_option`
+	, `open_type`, `permission_key`, `permission_level`, `pid`, `sort_rank`
+	, `title`, `url`)
+values (null, true, false, false, null
+	, 1, 'autoselect1', 1, 0, 11
+	, 'Demo01教程', '/demo/autoselect1')
+[2020-06-11 15:12:29.663] DEBUG 134 statementLog - {conn-10001, pstmt-20085} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 370, 3, '<span class=''text-danger''>[总管理(admin)]</span>新增权限定义<span class=''text-danger''>[Demo01教程]</span>'
+	, 1, 'admin/permission/show/370', 1, '总管理')
+[2020-06-11 15:12:30.407] DEBUG 134 statementLog - {conn-10001, pstmt-20086} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:12:38.571] DEBUG 134 statementLog - {conn-10001, pstmt-20087} executed. select *
+from `jb_permission`
+where `id` = 370
+[2020-06-11 15:12:38.642] DEBUG 134 statementLog - {conn-10001, pstmt-20088} executed. update `jb_permission`
+set `is_system_admin_default` = 1
+where `id` = 370
+[2020-06-11 15:12:38.644] DEBUG 134 statementLog - {conn-10001, pstmt-20089} executed. select * from jb_permission where 1=1 
+  and  pid = 370 
+  order by sort_rank asc
+[2020-06-11 15:12:38.645] DEBUG 134 statementLog - {conn-10001, pstmt-20090} executed. select distinct roles from jb_user
+[2020-06-11 15:12:39.219] DEBUG 134 statementLog - {conn-10001, pstmt-20091} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:12:41.725] DEBUG 134 statementLog - {conn-10001, pstmt-20092} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:12:41.727] DEBUG 134 statementLog - {conn-10001, pstmt-20093} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+limit 0, 1
+[2020-06-11 15:12:41.728] DEBUG 134 statementLog - {conn-10001, pstmt-20094} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_H50'
+limit 0, 1
+[2020-06-11 15:12:41.730] DEBUG 134 statementLog - {conn-10001, pstmt-20095} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_GLOBAL_SEARCH_SHOW'
+limit 0, 1
+[2020-06-11 15:12:41.731] DEBUG 134 statementLog - {conn-10001, pstmt-20096} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:12:41.733] DEBUG 134 statementLog - {conn-10001, pstmt-20097} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+limit 0, 1
+[2020-06-11 15:12:41.741] DEBUG 134 statementLog - {conn-10001, pstmt-20098} executed. select distinct p.* from jb_role_permission rp left join jb_permission as p on p.id=rp.permission_id  where p.is_menu=1 and  rp.role_id in('1')  order by p.sort_rank asc
+[2020-06-11 15:12:41.745] DEBUG 134 statementLog - {conn-10001, pstmt-20099} executed. select * from jb_permission where 1=1 
+  and  is_system_admin_default = 1 
+  and  is_menu = 1 
+  order by sort_rank asc
+[2020-06-11 15:12:41.750] DEBUG 134 statementLog - {conn-10001, pstmt-20100} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_NAV_MENU_DEFAULT_ICON'
+limit 0, 1
+[2020-06-11 15:12:41.762] DEBUG 134 statementLog - {conn-10001, pstmt-20101} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_LOGO'
+limit 0, 1
+[2020-06-11 15:12:48.336] DEBUG 134 statementLog - {conn-10001, pstmt-20102} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:15:01.347] DEBUG 134 statementLog - {conn-10001, stmt-20000} executed. set names utf8mb4
+[2020-06-11 15:15:01.397] DEBUG 134 statementLog - {conn-10001, stmt-20001} executed. select * from `jb_application` where 1 = 2
+[2020-06-11 15:15:01.402] DEBUG 134 statementLog - {conn-10001, stmt-20002} executed. select * from `jb_brand` where 1 = 2
+[2020-06-11 15:15:01.403] DEBUG 134 statementLog - {conn-10001, stmt-20003} executed. select * from `jb_change_log` where 1 = 2
+[2020-06-11 15:15:01.404] DEBUG 134 statementLog - {conn-10001, stmt-20004} executed. select * from `jb_demotable` where 1 = 2
+[2020-06-11 15:15:01.407] DEBUG 134 statementLog - {conn-10001, stmt-20005} executed. select * from `jb_dictionary` where 1 = 2
+[2020-06-11 15:15:01.409] DEBUG 134 statementLog - {conn-10001, stmt-20006} executed. select * from `jb_dictionary_type` where 1 = 2
+[2020-06-11 15:15:01.412] DEBUG 134 statementLog - {conn-10001, stmt-20007} executed. select * from `jb_download_log` where 1 = 2
+[2020-06-11 15:15:01.413] DEBUG 134 statementLog - {conn-10001, stmt-20008} executed. select * from `jb_global_config` where 1 = 2
+[2020-06-11 15:15:01.415] DEBUG 134 statementLog - {conn-10001, stmt-20009} executed. select * from `jb_goods` where 1 = 2
+[2020-06-11 15:15:01.416] DEBUG 134 statementLog - {conn-10001, stmt-20010} executed. select * from `jb_goods_attr` where 1 = 2
+[2020-06-11 15:15:01.418] DEBUG 134 statementLog - {conn-10001, stmt-20011} executed. select * from `jb_goods_back_category` where 1 = 2
+[2020-06-11 15:15:01.420] DEBUG 134 statementLog - {conn-10001, stmt-20012} executed. select * from `jb_goods_element_content` where 1 = 2
+[2020-06-11 15:15:01.421] DEBUG 134 statementLog - {conn-10001, stmt-20013} executed. select * from `jb_goods_group` where 1 = 2
+[2020-06-11 15:15:01.423] DEBUG 134 statementLog - {conn-10001, stmt-20014} executed. select * from `jb_goods_html_content` where 1 = 2
+[2020-06-11 15:15:01.424] DEBUG 134 statementLog - {conn-10001, stmt-20015} executed. select * from `jb_goods_type` where 1 = 2
+[2020-06-11 15:15:01.426] DEBUG 134 statementLog - {conn-10001, stmt-20016} executed. select * from `jb_goods_type_brand` where 1 = 2
+[2020-06-11 15:15:01.428] DEBUG 134 statementLog - {conn-10001, stmt-20017} executed. select * from `jb_jbolt_file` where 1 = 2
+[2020-06-11 15:15:01.431] DEBUG 134 statementLog - {conn-10001, stmt-20018} executed. select * from `jb_jbolt_version` where 1 = 2
+[2020-06-11 15:15:01.433] DEBUG 134 statementLog - {conn-10001, stmt-20019} executed. select * from `jb_jbolt_version_file` where 1 = 2
+[2020-06-11 15:15:01.435] DEBUG 134 statementLog - {conn-10001, stmt-20020} executed. select * from `jb_login_log` where 1 = 2
+[2020-06-11 15:15:01.436] DEBUG 134 statementLog - {conn-10001, stmt-20021} executed. select * from `jb_mall` where 1 = 2
+[2020-06-11 15:15:01.438] DEBUG 134 statementLog - {conn-10001, stmt-20022} executed. select * from `jb_order` where 1 = 2
+[2020-06-11 15:15:01.440] DEBUG 134 statementLog - {conn-10001, stmt-20023} executed. select * from `jb_order_item` where 1 = 2
+[2020-06-11 15:15:01.441] DEBUG 134 statementLog - {conn-10001, stmt-20024} executed. select * from `jb_order_shipping` where 1 = 2
+[2020-06-11 15:15:01.443] DEBUG 134 statementLog - {conn-10001, stmt-20025} executed. select * from `jb_permission` where 1 = 2
+[2020-06-11 15:15:01.445] DEBUG 134 statementLog - {conn-10001, stmt-20026} executed. select * from `jb_remote_login_log` where 1 = 2
+[2020-06-11 15:15:01.447] DEBUG 134 statementLog - {conn-10001, stmt-20027} executed. select * from `jb_role` where 1 = 2
+[2020-06-11 15:15:01.449] DEBUG 134 statementLog - {conn-10001, stmt-20028} executed. select * from `jb_role_permission` where 1 = 2
+[2020-06-11 15:15:01.451] DEBUG 134 statementLog - {conn-10001, stmt-20029} executed. select * from `jb_shelf` where 1 = 2
+[2020-06-11 15:15:01.453] DEBUG 134 statementLog - {conn-10001, stmt-20030} executed. select * from `jb_shelf_activity` where 1 = 2
+[2020-06-11 15:15:01.454] DEBUG 134 statementLog - {conn-10001, stmt-20031} executed. select * from `jb_shelf_carousel` where 1 = 2
+[2020-06-11 15:15:01.455] DEBUG 134 statementLog - {conn-10001, stmt-20032} executed. select * from `jb_shelf_element` where 1 = 2
+[2020-06-11 15:15:01.457] DEBUG 134 statementLog - {conn-10001, stmt-20033} executed. select * from `jb_shelf_goods_floor` where 1 = 2
+[2020-06-11 15:15:01.459] DEBUG 134 statementLog - {conn-10001, stmt-20034} executed. select * from `jb_shelf_goods_group` where 1 = 2
+[2020-06-11 15:15:01.461] DEBUG 134 statementLog - {conn-10001, stmt-20035} executed. select * from `jb_sku` where 1 = 2
+[2020-06-11 15:15:01.463] DEBUG 134 statementLog - {conn-10001, stmt-20036} executed. select * from `jb_sku_item` where 1 = 2
+[2020-06-11 15:15:01.465] DEBUG 134 statementLog - {conn-10001, stmt-20037} executed. select * from `jb_spec` where 1 = 2
+[2020-06-11 15:15:01.466] DEBUG 134 statementLog - {conn-10001, stmt-20038} executed. select * from `jb_spec_item` where 1 = 2
+[2020-06-11 15:15:01.468] DEBUG 134 statementLog - {conn-10001, stmt-20039} executed. select * from `jb_system_log` where 1 = 2
+[2020-06-11 15:15:01.469] DEBUG 134 statementLog - {conn-10001, stmt-20040} executed. select * from `jb_update_libs` where 1 = 2
+[2020-06-11 15:15:01.471] DEBUG 134 statementLog - {conn-10001, stmt-20041} executed. select * from `jb_user` where 1 = 2
+[2020-06-11 15:15:01.473] DEBUG 134 statementLog - {conn-10001, stmt-20042} executed. select * from `jb_user_config` where 1 = 2
+[2020-06-11 15:15:01.475] DEBUG 134 statementLog - {conn-10001, stmt-20043} executed. select * from `jb_wechat_article` where 1 = 2
+[2020-06-11 15:15:01.477] DEBUG 134 statementLog - {conn-10001, stmt-20044} executed. select * from `jb_wechat_autoreply` where 1 = 2
+[2020-06-11 15:15:01.479] DEBUG 134 statementLog - {conn-10001, stmt-20045} executed. select * from `jb_wechat_config` where 1 = 2
+[2020-06-11 15:15:01.481] DEBUG 134 statementLog - {conn-10001, stmt-20046} executed. select * from `jb_wechat_keywords` where 1 = 2
+[2020-06-11 15:15:01.483] DEBUG 134 statementLog - {conn-10001, stmt-20047} executed. select * from `jb_wechat_media` where 1 = 2
+[2020-06-11 15:15:01.485] DEBUG 134 statementLog - {conn-10001, stmt-20048} executed. select * from `jb_wechat_menu` where 1 = 2
+[2020-06-11 15:15:01.486] DEBUG 134 statementLog - {conn-10001, stmt-20049} executed. select * from `jb_wechat_mpinfo` where 1 = 2
+[2020-06-11 15:15:01.488] DEBUG 134 statementLog - {conn-10001, stmt-20050} executed. select * from `jb_wechat_reply_content` where 1 = 2
+[2020-06-11 15:15:01.490] DEBUG 134 statementLog - {conn-10001, stmt-20051} executed. select * from `jb_wechat_user` where 1 = 2
+[2020-06-11 15:15:02.132] DEBUG 134 statementLog - {conn-10001, pstmt-20052} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ACTION_REPORT_WRITER'
+limit 0, 1
+[2020-06-11 15:15:02.139] DEBUG 134 statementLog - {conn-10001, pstmt-20053} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_AUTO_CACHE_LOG'
+limit 0, 1
+[2020-06-11 15:15:02.153] DEBUG 134 statementLog - {conn-10001, pstmt-20054} executed. select * from jb_user  where 1=1 
+  and  is_system_admin = 1 
+  order by rand() asc limit 1
+
+[2020-06-11 15:15:02.158] DEBUG 134 statementLog - {conn-10001, pstmt-20055} executed. select id
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+	and id != -1
+limit 0, 1
+[2020-06-11 15:15:02.162] DEBUG 134 statementLog - {conn-10001, pstmt-20056} executed. select * from jb_global_config  where 1=1 
+  and  config_key = 'ASSETS_VERSION' 
+ limit 1
+
+[2020-06-11 15:15:02.165] DEBUG 134 statementLog - {conn-10001, pstmt-20057} executed. select *
+from `jb_global_config`
+where `id` = 29
+[2020-06-11 15:15:02.213] DEBUG 134 statementLog - {conn-10001, pstmt-20058} executed. update `jb_global_config`
+set `config_value` = '20200611151502162', `update_time` = '2020-06-11'
+where `id` = 29
+[2020-06-11 15:15:02.215] DEBUG 134 statementLog - {conn-10001, pstmt-20059} executed. select *
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+limit 0, 1
+[2020-06-11 15:15:02.218] DEBUG 134 statementLog - {conn-10001, pstmt-20060} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 15:15:02.228] DEBUG 134 statementLog - {conn-10001, pstmt-20061} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 29, 6, '<span class=''text-danger''>[总管理(admin)]</span>更新全局配置<span class=''text-danger''>[系统静态资源版本号]</span>'
+	, 2, 'admin/globalconfig/show/29', 1, '总管理')
+[2020-06-11 15:15:02.236] DEBUG 134 statementLog - {conn-10001, pstmt-20062} executed. select * from jb_wechat_mpinfo where 1=1 
+  and  enable = 1 
+
+[2020-06-11 15:15:08.892] DEBUG 134 statementLog - {conn-10001, pstmt-20063} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_NAME'
+limit 0, 1
+[2020-06-11 15:15:08.895] DEBUG 134 statementLog - {conn-10001, pstmt-20064} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+limit 0, 1
+[2020-06-11 15:15:08.897] DEBUG 134 statementLog - {conn-10001, pstmt-20065} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+limit 0, 1
+[2020-06-11 15:15:08.899] DEBUG 134 statementLog - {conn-10001, pstmt-20066} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG'
+limit 0, 1
+[2020-06-11 15:15:08.904] DEBUG 134 statementLog - {conn-10001, pstmt-20067} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_USE_CAPTURE'
+limit 0, 1
+[2020-06-11 15:15:08.906] DEBUG 134 statementLog - {conn-10001, pstmt-20068} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_LINK'
+limit 0, 1
+[2020-06-11 15:15:08.908] DEBUG 134 statementLog - {conn-10001, pstmt-20069} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_COMPANY'
+limit 0, 1
+[2020-06-11 15:15:08.910] DEBUG 134 statementLog - {conn-10001, pstmt-20070} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_NEST'
+limit 0, 1
+[2020-06-11 15:15:08.943] DEBUG 134 statementLog - {conn-10001, pstmt-20071} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_CAPTURE_TYPE'
+limit 0, 1
+[2020-06-11 15:15:15.646] DEBUG 134 statementLog - {conn-10001, pstmt-20072} executed. select * from jb_user  where 1=1 
+  and  username = 'admin' 
+ limit 1
+
+[2020-06-11 15:15:15.666] DEBUG 134 statementLog - {conn-10001, pstmt-20073} executed. insert into `jb_login_log` (`browser_engine_name`, `browser_engine_version`, `browser_name`, `browser_version`, `create_time`
+	, `is_browser`, `is_mobile`, `login_address`, `login_ip`, `login_state`
+	, `login_time`, `os_name`, `os_platform_name`, `user_id`, `username`)
+values ('Webkit', '537.36', 'MSEdge', '83.0.478.45', '2020-06-11'
+	, true, false, 'XXXX', '127.0.0.1', 1
+	, '2020-06-11', 'Windows 10 or Windows Server 2016', 'Windows', 1, 'admin')
+[2020-06-11 15:15:15.673] DEBUG 134 statementLog - {conn-10001, pstmt-20074} executed. update `jb_user`
+set `is_remote_login` = false, `login_city` = null, `login_ip` = '127.0.0.1', `login_province` = null, `login_time` = '2020-06-11'
+where `id` = 1
+[2020-06-11 15:15:15.677] DEBUG 134 statementLog - {conn-10001, pstmt-20075} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:15:15.681] DEBUG 134 statementLog - {conn-10001, pstmt-20076} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:15:15.682] DEBUG 134 statementLog - {conn-10001, pstmt-20077} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_NEST'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:15:16.927] DEBUG 134 statementLog - {conn-10001, pstmt-20078} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 15:15:16.932] DEBUG 134 statementLog - {conn-10001, pstmt-20079} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:15:16.935] DEBUG 134 statementLog - {conn-10001, pstmt-20080} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+limit 0, 1
+[2020-06-11 15:15:16.938] DEBUG 134 statementLog - {conn-10001, pstmt-20081} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_H50'
+limit 0, 1
+[2020-06-11 15:15:16.941] DEBUG 134 statementLog - {conn-10001, pstmt-20082} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_GLOBAL_SEARCH_SHOW'
+limit 0, 1
+[2020-06-11 15:15:16.943] DEBUG 134 statementLog - {conn-10001, pstmt-20083} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:15:16.945] DEBUG 134 statementLog - {conn-10001, pstmt-20084} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+limit 0, 1
+[2020-06-11 15:15:16.953] DEBUG 134 statementLog - {conn-10001, pstmt-20085} executed. select distinct p.* from jb_role_permission rp left join jb_permission as p on p.id=rp.permission_id  where p.is_menu=1 and  rp.role_id in('1')  order by p.sort_rank asc
+[2020-06-11 15:15:16.964] DEBUG 134 statementLog - {conn-10001, pstmt-20086} executed. select * from jb_permission where 1=1 
+  and  is_system_admin_default = 1 
+  and  is_menu = 1 
+  order by sort_rank asc
+[2020-06-11 15:15:16.972] DEBUG 134 statementLog - {conn-10001, pstmt-20087} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_NAV_MENU_DEFAULT_ICON'
+limit 0, 1
+[2020-06-11 15:15:16.991] DEBUG 134 statementLog - {conn-10001, pstmt-20088} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_LOGO'
+limit 0, 1
+[2020-06-11 15:16:12.803] DEBUG 134 statementLog - {conn-10001, stmt-20000} executed. set names utf8mb4
+[2020-06-11 15:16:12.854] DEBUG 134 statementLog - {conn-10001, stmt-20001} executed. select * from `jb_application` where 1 = 2
+[2020-06-11 15:16:12.859] DEBUG 134 statementLog - {conn-10001, stmt-20002} executed. select * from `jb_brand` where 1 = 2
+[2020-06-11 15:16:12.861] DEBUG 134 statementLog - {conn-10001, stmt-20003} executed. select * from `jb_change_log` where 1 = 2
+[2020-06-11 15:16:12.862] DEBUG 134 statementLog - {conn-10001, stmt-20004} executed. select * from `jb_demotable` where 1 = 2
+[2020-06-11 15:16:12.864] DEBUG 134 statementLog - {conn-10001, stmt-20005} executed. select * from `jb_dictionary` where 1 = 2
+[2020-06-11 15:16:12.866] DEBUG 134 statementLog - {conn-10001, stmt-20006} executed. select * from `jb_dictionary_type` where 1 = 2
+[2020-06-11 15:16:12.868] DEBUG 134 statementLog - {conn-10001, stmt-20007} executed. select * from `jb_download_log` where 1 = 2
+[2020-06-11 15:16:12.870] DEBUG 134 statementLog - {conn-10001, stmt-20008} executed. select * from `jb_global_config` where 1 = 2
+[2020-06-11 15:16:12.871] DEBUG 134 statementLog - {conn-10001, stmt-20009} executed. select * from `jb_goods` where 1 = 2
+[2020-06-11 15:16:12.873] DEBUG 134 statementLog - {conn-10001, stmt-20010} executed. select * from `jb_goods_attr` where 1 = 2
+[2020-06-11 15:16:12.874] DEBUG 134 statementLog - {conn-10001, stmt-20011} executed. select * from `jb_goods_back_category` where 1 = 2
+[2020-06-11 15:16:12.875] DEBUG 134 statementLog - {conn-10001, stmt-20012} executed. select * from `jb_goods_element_content` where 1 = 2
+[2020-06-11 15:16:12.876] DEBUG 134 statementLog - {conn-10001, stmt-20013} executed. select * from `jb_goods_group` where 1 = 2
+[2020-06-11 15:16:12.877] DEBUG 134 statementLog - {conn-10001, stmt-20014} executed. select * from `jb_goods_html_content` where 1 = 2
+[2020-06-11 15:16:12.878] DEBUG 134 statementLog - {conn-10001, stmt-20015} executed. select * from `jb_goods_type` where 1 = 2
+[2020-06-11 15:16:12.880] DEBUG 134 statementLog - {conn-10001, stmt-20016} executed. select * from `jb_goods_type_brand` where 1 = 2
+[2020-06-11 15:16:12.881] DEBUG 134 statementLog - {conn-10001, stmt-20017} executed. select * from `jb_jbolt_file` where 1 = 2
+[2020-06-11 15:16:12.883] DEBUG 134 statementLog - {conn-10001, stmt-20018} executed. select * from `jb_jbolt_version` where 1 = 2
+[2020-06-11 15:16:12.885] DEBUG 134 statementLog - {conn-10001, stmt-20019} executed. select * from `jb_jbolt_version_file` where 1 = 2
+[2020-06-11 15:16:12.886] DEBUG 134 statementLog - {conn-10001, stmt-20020} executed. select * from `jb_login_log` where 1 = 2
+[2020-06-11 15:16:12.888] DEBUG 134 statementLog - {conn-10001, stmt-20021} executed. select * from `jb_mall` where 1 = 2
+[2020-06-11 15:16:12.890] DEBUG 134 statementLog - {conn-10001, stmt-20022} executed. select * from `jb_order` where 1 = 2
+[2020-06-11 15:16:12.892] DEBUG 134 statementLog - {conn-10001, stmt-20023} executed. select * from `jb_order_item` where 1 = 2
+[2020-06-11 15:16:12.893] DEBUG 134 statementLog - {conn-10001, stmt-20024} executed. select * from `jb_order_shipping` where 1 = 2
+[2020-06-11 15:16:12.895] DEBUG 134 statementLog - {conn-10001, stmt-20025} executed. select * from `jb_permission` where 1 = 2
+[2020-06-11 15:16:12.897] DEBUG 134 statementLog - {conn-10001, stmt-20026} executed. select * from `jb_remote_login_log` where 1 = 2
+[2020-06-11 15:16:12.900] DEBUG 134 statementLog - {conn-10001, stmt-20027} executed. select * from `jb_role` where 1 = 2
+[2020-06-11 15:16:12.901] DEBUG 134 statementLog - {conn-10001, stmt-20028} executed. select * from `jb_role_permission` where 1 = 2
+[2020-06-11 15:16:12.902] DEBUG 134 statementLog - {conn-10001, stmt-20029} executed. select * from `jb_shelf` where 1 = 2
+[2020-06-11 15:16:12.903] DEBUG 134 statementLog - {conn-10001, stmt-20030} executed. select * from `jb_shelf_activity` where 1 = 2
+[2020-06-11 15:16:12.904] DEBUG 134 statementLog - {conn-10001, stmt-20031} executed. select * from `jb_shelf_carousel` where 1 = 2
+[2020-06-11 15:16:12.905] DEBUG 134 statementLog - {conn-10001, stmt-20032} executed. select * from `jb_shelf_element` where 1 = 2
+[2020-06-11 15:16:12.906] DEBUG 134 statementLog - {conn-10001, stmt-20033} executed. select * from `jb_shelf_goods_floor` where 1 = 2
+[2020-06-11 15:16:12.908] DEBUG 134 statementLog - {conn-10001, stmt-20034} executed. select * from `jb_shelf_goods_group` where 1 = 2
+[2020-06-11 15:16:12.908] DEBUG 134 statementLog - {conn-10001, stmt-20035} executed. select * from `jb_sku` where 1 = 2
+[2020-06-11 15:16:12.910] DEBUG 134 statementLog - {conn-10001, stmt-20036} executed. select * from `jb_sku_item` where 1 = 2
+[2020-06-11 15:16:12.911] DEBUG 134 statementLog - {conn-10001, stmt-20037} executed. select * from `jb_spec` where 1 = 2
+[2020-06-11 15:16:12.912] DEBUG 134 statementLog - {conn-10001, stmt-20038} executed. select * from `jb_spec_item` where 1 = 2
+[2020-06-11 15:16:12.914] DEBUG 134 statementLog - {conn-10001, stmt-20039} executed. select * from `jb_system_log` where 1 = 2
+[2020-06-11 15:16:12.915] DEBUG 134 statementLog - {conn-10001, stmt-20040} executed. select * from `jb_update_libs` where 1 = 2
+[2020-06-11 15:16:12.916] DEBUG 134 statementLog - {conn-10001, stmt-20041} executed. select * from `jb_user` where 1 = 2
+[2020-06-11 15:16:12.918] DEBUG 134 statementLog - {conn-10001, stmt-20042} executed. select * from `jb_user_config` where 1 = 2
+[2020-06-11 15:16:12.919] DEBUG 134 statementLog - {conn-10001, stmt-20043} executed. select * from `jb_wechat_article` where 1 = 2
+[2020-06-11 15:16:12.921] DEBUG 134 statementLog - {conn-10001, stmt-20044} executed. select * from `jb_wechat_autoreply` where 1 = 2
+[2020-06-11 15:16:12.923] DEBUG 134 statementLog - {conn-10001, stmt-20045} executed. select * from `jb_wechat_config` where 1 = 2
+[2020-06-11 15:16:12.924] DEBUG 134 statementLog - {conn-10001, stmt-20046} executed. select * from `jb_wechat_keywords` where 1 = 2
+[2020-06-11 15:16:12.926] DEBUG 134 statementLog - {conn-10001, stmt-20047} executed. select * from `jb_wechat_media` where 1 = 2
+[2020-06-11 15:16:12.928] DEBUG 134 statementLog - {conn-10001, stmt-20048} executed. select * from `jb_wechat_menu` where 1 = 2
+[2020-06-11 15:16:12.929] DEBUG 134 statementLog - {conn-10001, stmt-20049} executed. select * from `jb_wechat_mpinfo` where 1 = 2
+[2020-06-11 15:16:12.931] DEBUG 134 statementLog - {conn-10001, stmt-20050} executed. select * from `jb_wechat_reply_content` where 1 = 2
+[2020-06-11 15:16:12.932] DEBUG 134 statementLog - {conn-10001, stmt-20051} executed. select * from `jb_wechat_user` where 1 = 2
+[2020-06-11 15:16:13.489] DEBUG 134 statementLog - {conn-10001, pstmt-20052} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ACTION_REPORT_WRITER'
+limit 0, 1
+[2020-06-11 15:16:13.494] DEBUG 134 statementLog - {conn-10001, pstmt-20053} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_AUTO_CACHE_LOG'
+limit 0, 1
+[2020-06-11 15:16:13.506] DEBUG 134 statementLog - {conn-10001, pstmt-20054} executed. select * from jb_user  where 1=1 
+  and  is_system_admin = 1 
+  order by rand() asc limit 1
+
+[2020-06-11 15:16:13.510] DEBUG 134 statementLog - {conn-10001, pstmt-20055} executed. select id
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+	and id != -1
+limit 0, 1
+[2020-06-11 15:16:13.513] DEBUG 134 statementLog - {conn-10001, pstmt-20056} executed. select * from jb_global_config  where 1=1 
+  and  config_key = 'ASSETS_VERSION' 
+ limit 1
+
+[2020-06-11 15:16:13.515] DEBUG 134 statementLog - {conn-10001, pstmt-20057} executed. select *
+from `jb_global_config`
+where `id` = 29
+[2020-06-11 15:16:13.534] DEBUG 134 statementLog - {conn-10001, pstmt-20058} executed. update `jb_global_config`
+set `config_value` = '20200611151613514', `update_time` = '2020-06-11'
+where `id` = 29
+[2020-06-11 15:16:13.538] DEBUG 134 statementLog - {conn-10001, pstmt-20059} executed. select *
+from jb_global_config
+where config_key = 'ASSETS_VERSION'
+limit 0, 1
+[2020-06-11 15:16:13.546] DEBUG 134 statementLog - {conn-10001, pstmt-20060} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 15:16:13.556] DEBUG 134 statementLog - {conn-10001, pstmt-20061} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 29, 6, '<span class=''text-danger''>[总管理(admin)]</span>更新全局配置<span class=''text-danger''>[系统静态资源版本号]</span>'
+	, 2, 'admin/globalconfig/show/29', 1, '总管理')
+[2020-06-11 15:16:13.561] DEBUG 134 statementLog - {conn-10001, pstmt-20062} executed. select * from jb_wechat_mpinfo where 1=1 
+  and  enable = 1 
+
+[2020-06-11 15:16:25.884] DEBUG 134 statementLog - {conn-10001, pstmt-20063} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_NAME'
+limit 0, 1
+[2020-06-11 15:16:25.887] DEBUG 134 statementLog - {conn-10001, pstmt-20064} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+limit 0, 1
+[2020-06-11 15:16:25.889] DEBUG 134 statementLog - {conn-10001, pstmt-20065} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+limit 0, 1
+[2020-06-11 15:16:25.890] DEBUG 134 statementLog - {conn-10001, pstmt-20066} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_BGIMG'
+limit 0, 1
+[2020-06-11 15:16:25.898] DEBUG 134 statementLog - {conn-10001, pstmt-20067} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_USE_CAPTURE'
+limit 0, 1
+[2020-06-11 15:16:25.901] DEBUG 134 statementLog - {conn-10001, pstmt-20068} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_LINK'
+limit 0, 1
+[2020-06-11 15:16:25.902] DEBUG 134 statementLog - {conn-10001, pstmt-20069} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_COPYRIGHT_COMPANY'
+limit 0, 1
+[2020-06-11 15:16:25.904] DEBUG 134 statementLog - {conn-10001, pstmt-20070} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_NEST'
+limit 0, 1
+[2020-06-11 15:16:25.934] DEBUG 134 statementLog - {conn-10001, pstmt-20071} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_LOGIN_CAPTURE_TYPE'
+limit 0, 1
+[2020-06-11 15:16:31.132] DEBUG 134 statementLog - {conn-10001, pstmt-20072} executed. select * from jb_user  where 1=1 
+  and  username = 'admin' 
+ limit 1
+
+[2020-06-11 15:16:31.225] DEBUG 134 statementLog - {conn-10001, pstmt-20073} executed. insert into `jb_login_log` (`browser_engine_name`, `browser_engine_version`, `browser_name`, `browser_version`, `create_time`
+	, `is_browser`, `is_mobile`, `login_address`, `login_ip`, `login_state`
+	, `login_time`, `os_name`, `os_platform_name`, `user_id`, `username`)
+values ('Webkit', '537.36', 'MSEdge', '83.0.478.45', '2020-06-11'
+	, true, false, 'XXXX', '127.0.0.1', 1
+	, '2020-06-11', 'Windows 10 or Windows Server 2016', 'Windows', 1, 'admin')
+[2020-06-11 15:16:31.230] DEBUG 134 statementLog - {conn-10001, pstmt-20074} executed. update `jb_user`
+set `is_remote_login` = false, `login_city` = null, `login_ip` = '127.0.0.1', `login_province` = null, `login_time` = '2020-06-11'
+where `id` = 1
+[2020-06-11 15:16:31.234] DEBUG 134 statementLog - {conn-10001, pstmt-20075} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_FORM_STYLE_GLASS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:16:31.235] DEBUG 134 statementLog - {conn-10001, pstmt-20076} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_BGIMG_BLUR'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:16:31.236] DEBUG 134 statementLog - {conn-10001, pstmt-20077} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_LOGIN_NEST'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:16:32.476] DEBUG 134 statementLog - {conn-10001, pstmt-20078} executed. select *
+from `jb_user`
+where `id` = 1
+[2020-06-11 15:16:32.481] DEBUG 134 statementLog - {conn-10001, pstmt-20079} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:16:32.482] DEBUG 134 statementLog - {conn-10001, pstmt-20080} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+limit 0, 1
+[2020-06-11 15:16:32.484] DEBUG 134 statementLog - {conn-10001, pstmt-20081} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_H50'
+limit 0, 1
+[2020-06-11 15:16:32.486] DEBUG 134 statementLog - {conn-10001, pstmt-20082} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_GLOBAL_SEARCH_SHOW'
+limit 0, 1
+[2020-06-11 15:16:32.489] DEBUG 134 statementLog - {conn-10001, pstmt-20083} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:16:32.491] DEBUG 134 statementLog - {conn-10001, pstmt-20084} executed. select *
+from jb_global_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+limit 0, 1
+[2020-06-11 15:16:32.498] DEBUG 134 statementLog - {conn-10001, pstmt-20085} executed. select distinct p.* from jb_role_permission rp left join jb_permission as p on p.id=rp.permission_id  where p.is_menu=1 and  rp.role_id in('1')  order by p.sort_rank asc
+[2020-06-11 15:16:32.506] DEBUG 134 statementLog - {conn-10001, pstmt-20086} executed. select * from jb_permission where 1=1 
+  and  is_system_admin_default = 1 
+  and  is_menu = 1 
+  order by sort_rank asc
+[2020-06-11 15:16:32.514] DEBUG 134 statementLog - {conn-10001, pstmt-20087} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_NAV_MENU_DEFAULT_ICON'
+limit 0, 1
+[2020-06-11 15:16:32.528] DEBUG 134 statementLog - {conn-10001, pstmt-20088} executed. select *
+from jb_global_config
+where config_key = 'SYSTEM_ADMIN_LOGO'
+limit 0, 1
+[2020-06-11 15:16:33.665] DEBUG 134 statementLog - {conn-10001, pstmt-20089} executed. select id,name from jb_user
+[2020-06-11 15:17:02.663] DEBUG 134 statementLog - {conn-10001, pstmt-20090} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:17:11.731] DEBUG 134 statementLog - {conn-10001, pstmt-20091} executed. select *
+from `jb_permission`
+where `id` = 208
+[2020-06-11 15:17:11.857] DEBUG 134 statementLog - {conn-10001, pstmt-20092} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:17:42.656] DEBUG 134 statementLog - {conn-10001, pstmt-20093} executed. select *
+from `jb_permission`
+where `id` = 370
+[2020-06-11 15:17:42.768] DEBUG 134 statementLog - {conn-10001, pstmt-20094} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:17:56.921] DEBUG 134 statementLog - {conn-10001, pstmt-20095} executed. select *
+from `jb_permission`
+where `id` = 209
+[2020-06-11 15:17:57.048] DEBUG 134 statementLog - {conn-10001, pstmt-20096} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:18:04.773] DEBUG 134 statementLog - {conn-10001, pstmt-20097} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:18:22.050] DEBUG 134 statementLog - {conn-10001, pstmt-20098} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:18:27.070] DEBUG 134 statementLog - {conn-10001, pstmt-20099} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:18:56.263] DEBUG 134 statementLog - {conn-10001, pstmt-20100} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:19:03.453] DEBUG 134 statementLog - {conn-10001, pstmt-20101} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:19:33.502] DEBUG 134 statementLog - {conn-10001, pstmt-20102} executed. select id
+from jb_permission
+where title = 'AutoSelect'
+	and pid = 370
+	and id != -1
+limit 0, 1
+[2020-06-11 15:19:33.504] DEBUG 134 statementLog - {conn-10001, pstmt-20103} executed. select id
+from jb_permission
+where permission_key = 'autoselect1'
+	and id != -1
+limit 0, 1
+[2020-06-11 15:19:39.500] DEBUG 134 statementLog - {conn-10001, pstmt-20104} executed. select id
+from jb_permission
+where title = 'AutoSelect'
+	and pid = 370
+	and id != -1
+limit 0, 1
+[2020-06-11 15:19:39.502] DEBUG 134 statementLog - {conn-10001, pstmt-20105} executed. select id
+from jb_permission
+where permission_key = 'autoselect01'
+	and id != -1
+limit 0, 1
+[2020-06-11 15:19:39.504] DEBUG 134 statementLog - {conn-10001, pstmt-20106} executed. select count(*) from jb_permission where 1=1 
+  and  pid = 370 
+
+[2020-06-11 15:19:39.552] DEBUG 134 statementLog - {conn-10001, pstmt-20107} executed. insert into `jb_permission` (`icons`, `is_menu`, `is_system_admin_default`, `is_target_blank`, `open_option`
+	, `open_type`, `permission_key`, `permission_level`, `pid`, `sort_rank`
+	, `title`, `url`)
+values (null, true, false, false, null
+	, 1, 'autoselect01', 2, 370, 1
+	, 'AutoSelect', '/demo/autoselect1')
+[2020-06-11 15:19:39.558] DEBUG 134 statementLog - {conn-10001, pstmt-20108} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 371, 3, '<span class=''text-danger''>[总管理(admin)]</span>新增权限定义<span class=''text-danger''>[AutoSelect]</span>'
+	, 1, 'admin/permission/show/371', 1, '总管理')
+[2020-06-11 15:19:40.303] DEBUG 134 statementLog - {conn-10001, pstmt-20109} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:19:44.756] DEBUG 134 statementLog - {conn-10001, pstmt-20110} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:19:55.100] DEBUG 134 statementLog - {conn-10001, pstmt-20111} executed. select id
+from jb_permission
+where title = 'Demo01教程'
+	and pid = 0
+	and id != 370
+limit 0, 1
+[2020-06-11 15:19:55.103] DEBUG 134 statementLog - {conn-10001, pstmt-20112} executed. select id
+from jb_permission
+where permission_key = 'Demo01'
+	and id != 370
+limit 0, 1
+[2020-06-11 15:19:55.113] DEBUG 134 statementLog - {conn-10001, pstmt-20113} executed. update `jb_permission`
+set `icons` = null, `is_menu` = true, `is_system_admin_default` = true, `is_target_blank` = false, `open_option` = null, `open_type` = 1, `permission_key` = 'Demo01', `permission_level` = 1, `pid` = 0, `title` = 'Demo01教程', `url` = null
+where `id` = 370
+[2020-06-11 15:19:55.115] DEBUG 134 statementLog - {conn-10001, pstmt-20114} executed. select distinct roles from jb_user
+[2020-06-11 15:19:55.122] DEBUG 134 statementLog - {conn-10001, pstmt-20115} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 370, 3, '<span class=''text-danger''>[总管理(admin)]</span>更新权限定义<span class=''text-danger''>[Demo01教程]</span>'
+	, 2, 'admin/permission/show/370', 1, '总管理')
+[2020-06-11 15:19:55.864] DEBUG 134 statementLog - {conn-10001, pstmt-20116} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:20:09.066] DEBUG 134 statementLog - {conn-10001, pstmt-20117} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:20:48.822] DEBUG 134 statementLog - {conn-10001, pstmt-20118} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:21:04.804] DEBUG 134 statementLog - {conn-10001, pstmt-20119} executed. select id
+from jb_permission
+where title = 'AutoSelect组件'
+	and pid = 371
+	and id != -1
+limit 0, 1
+[2020-06-11 15:21:04.806] DEBUG 134 statementLog - {conn-10001, pstmt-20120} executed. select id
+from jb_permission
+where permission_key = 'autoselect001'
+	and id != -1
+limit 0, 1
+[2020-06-11 15:21:04.809] DEBUG 134 statementLog - {conn-10001, pstmt-20121} executed. select count(*) from jb_permission where 1=1 
+  and  pid = 371 
+
+[2020-06-11 15:21:04.834] DEBUG 134 statementLog - {conn-10001, pstmt-20122} executed. insert into `jb_permission` (`icons`, `is_menu`, `is_system_admin_default`, `is_target_blank`, `open_option`
+	, `open_type`, `permission_key`, `permission_level`, `pid`, `sort_rank`
+	, `title`, `url`)
+values (null, true, false, false, null
+	, 1, 'autoselect001', 3, 371, 1
+	, 'AutoSelect组件', '/demo/autoselect1')
+[2020-06-11 15:21:04.839] DEBUG 134 statementLog - {conn-10001, pstmt-20123} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 372, 3, '<span class=''text-danger''>[总管理(admin)]</span>新增权限定义<span class=''text-danger''>[AutoSelect组件]</span>'
+	, 1, 'admin/permission/show/372', 1, '总管理')
+[2020-06-11 15:21:05.582] DEBUG 134 statementLog - {conn-10001, pstmt-20124} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:21:11.704] DEBUG 134 statementLog - {conn-10001, pstmt-20125} executed. select *
+from `jb_permission`
+where `id` = 371
+[2020-06-11 15:21:11.792] DEBUG 134 statementLog - {conn-10001, pstmt-20126} executed. select id,title,pid,permission_level from jb_permission order by sort_rank asc
+[2020-06-11 15:21:26.971] DEBUG 134 statementLog - {conn-10001, pstmt-20127} executed. select id
+from jb_permission
+where title = 'AutoSelect'
+	and pid = 370
+	and id != 371
+limit 0, 1
+[2020-06-11 15:21:26.973] DEBUG 134 statementLog - {conn-10001, pstmt-20128} executed. select id
+from jb_permission
+where permission_key = 'AutoSelect'
+	and id != 371
+limit 0, 1
+[2020-06-11 15:21:26.975] DEBUG 134 statementLog - {conn-10001, pstmt-20129} executed. select *
+from `jb_permission`
+where `id` = 370
+[2020-06-11 15:21:27.041] DEBUG 134 statementLog - {conn-10001, pstmt-20130} executed. update `jb_permission`
+set `icons` = null, `is_menu` = true, `is_system_admin_default` = false, `is_target_blank` = false, `open_option` = null, `open_type` = 1, `permission_key` = 'AutoSelect', `permission_level` = 2, `pid` = 370, `title` = 'AutoSelect', `url` = null
+where `id` = 371
+[2020-06-11 15:21:27.042] DEBUG 134 statementLog - {conn-10001, pstmt-20131} executed. select distinct roles from jb_user
+[2020-06-11 15:21:27.046] DEBUG 134 statementLog - {conn-10001, pstmt-20132} executed. insert into `jb_system_log` (`create_time`, `open_type`, `target_id`, `target_type`, `title`
+	, `type`, `url`, `user_id`, `user_name`)
+values ('2020-06-11', 1, 371, 3, '<span class=''text-danger''>[总管理(admin)]</span>更新权限定义<span class=''text-danger''>[AutoSelect]</span>'
+	, 2, 'admin/permission/show/371', 1, '总管理')
+[2020-06-11 15:21:27.786] DEBUG 134 statementLog - {conn-10001, pstmt-20133} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:21:30.598] DEBUG 134 statementLog - {conn-10001, pstmt-20134} executed. select *
+from `jb_permission`
+where `id` = 372
+[2020-06-11 15:21:30.623] DEBUG 134 statementLog - {conn-10001, pstmt-20135} executed. update `jb_permission`
+set `is_system_admin_default` = 1
+where `id` = 372
+[2020-06-11 15:21:30.624] DEBUG 134 statementLog - {conn-10001, pstmt-20136} executed. select *
+from `jb_permission`
+where `id` = 371
+[2020-06-11 15:21:30.630] DEBUG 134 statementLog - {conn-10001, pstmt-20137} executed. update `jb_permission`
+set `is_system_admin_default` = true
+where `id` = 371
+[2020-06-11 15:21:30.631] DEBUG 134 statementLog - {conn-10001, pstmt-20138} executed. select distinct roles from jb_user
+[2020-06-11 15:21:31.190] DEBUG 134 statementLog - {conn-10001, pstmt-20139} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:21:32.733] DEBUG 134 statementLog - {conn-10001, pstmt-20140} executed. select *
+from `jb_permission`
+where `id` = 371
+[2020-06-11 15:21:32.743] DEBUG 134 statementLog - {conn-10001, pstmt-20141} executed. update `jb_permission`
+set `is_system_admin_default` = 0
+where `id` = 371
+[2020-06-11 15:21:32.745] DEBUG 134 statementLog - {conn-10001, pstmt-20142} executed. select * from jb_permission where 1=1 
+  and  pid = 371 
+  order by sort_rank asc
+[2020-06-11 15:21:32.746] DEBUG 134 statementLog - {conn-10001, pstmt-20143} executed. select *
+from `jb_permission`
+where `id` = 372
+[2020-06-11 15:21:32.751] DEBUG 134 statementLog - {conn-10001, pstmt-20144} executed. update `jb_permission`
+set `is_system_admin_default` = false
+where `id` = 372
+[2020-06-11 15:21:32.753] DEBUG 134 statementLog - {conn-10001, pstmt-20145} executed. select distinct roles from jb_user
+[2020-06-11 15:21:33.312] DEBUG 134 statementLog - {conn-10001, pstmt-20146} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:21:34.663] DEBUG 134 statementLog - {conn-10001, pstmt-20147} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:21:34.665] DEBUG 134 statementLog - {conn-10001, pstmt-20148} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:21:34.667] DEBUG 134 statementLog - {conn-10001, pstmt-20149} executed. select distinct p.* from jb_role_permission rp left join jb_permission as p on p.id=rp.permission_id  where p.is_menu=1 and  rp.role_id in('1')  order by p.sort_rank asc
+[2020-06-11 15:21:34.670] DEBUG 134 statementLog - {conn-10001, pstmt-20150} executed. select * from jb_permission where 1=1 
+  and  is_system_admin_default = 1 
+  and  is_menu = 1 
+  order by sort_rank asc
+[2020-06-11 15:21:43.384] DEBUG 134 statementLog - {conn-10001, pstmt-20151} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:21:43.385] DEBUG 134 statementLog - {conn-10001, pstmt-20152} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:21:47.163] DEBUG 134 statementLog - {conn-10001, pstmt-20153} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:21:52.810] DEBUG 134 statementLog - {conn-10001, pstmt-20154} executed. select *
+from `jb_permission`
+where `id` = 371
+[2020-06-11 15:21:52.836] DEBUG 134 statementLog - {conn-10001, pstmt-20155} executed. update `jb_permission`
+set `is_system_admin_default` = 1
+where `id` = 371
+[2020-06-11 15:21:52.840] DEBUG 134 statementLog - {conn-10001, pstmt-20156} executed. select * from jb_permission where 1=1 
+  and  pid = 371 
+  order by sort_rank asc
+[2020-06-11 15:21:52.841] DEBUG 134 statementLog - {conn-10001, pstmt-20157} executed. select *
+from `jb_permission`
+where `id` = 372
+[2020-06-11 15:21:52.845] DEBUG 134 statementLog - {conn-10001, pstmt-20158} executed. update `jb_permission`
+set `is_system_admin_default` = true
+where `id` = 372
+[2020-06-11 15:21:52.846] DEBUG 134 statementLog - {conn-10001, pstmt-20159} executed. select distinct roles from jb_user
+[2020-06-11 15:21:53.380] DEBUG 134 statementLog - {conn-10001, pstmt-20160} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:21:55.386] DEBUG 134 statementLog - {conn-10001, pstmt-20161} executed. select *
+from `jb_permission`
+where `id` = 372
+[2020-06-11 15:21:55.394] DEBUG 134 statementLog - {conn-10001, pstmt-20162} executed. update `jb_permission`
+set `is_system_admin_default` = 0
+where `id` = 372
+[2020-06-11 15:21:55.396] DEBUG 134 statementLog - {conn-10001, pstmt-20163} executed. select distinct roles from jb_user
+[2020-06-11 15:21:55.927] DEBUG 134 statementLog - {conn-10001, pstmt-20164} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:21:58.106] DEBUG 134 statementLog - {conn-10001, pstmt-20165} executed. select *
+from `jb_permission`
+where `id` = 372
+[2020-06-11 15:21:58.136] DEBUG 134 statementLog - {conn-10001, pstmt-20166} executed. update `jb_permission`
+set `is_system_admin_default` = 1
+where `id` = 372
+[2020-06-11 15:21:58.136] DEBUG 134 statementLog - {conn-10001, pstmt-20167} executed. select *
+from `jb_permission`
+where `id` = 371
+[2020-06-11 15:21:58.137] DEBUG 134 statementLog - {conn-10001, pstmt-20168} executed. select distinct roles from jb_user
+[2020-06-11 15:21:58.667] DEBUG 134 statementLog - {conn-10001, pstmt-20169} executed. select * from jb_permission order by sort_rank asc
+[2020-06-11 15:22:00.703] DEBUG 134 statementLog - {conn-10001, pstmt-20170} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_WITH_TABS'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:22:00.706] DEBUG 134 statementLog - {conn-10001, pstmt-20171} executed. select *
+from jb_user_config
+where config_key = 'JBOLT_ADMIN_STYLE'
+	and user_id = 1
+limit 0, 1
+[2020-06-11 15:22:00.709] DEBUG 134 statementLog - {conn-10001, pstmt-20172} executed. select distinct p.* from jb_role_permission rp left join jb_permission as p on p.id=rp.permission_id  where p.is_menu=1 and  rp.role_id in('1')  order by p.sort_rank asc
+[2020-06-11 15:22:00.712] DEBUG 134 statementLog - {conn-10001, pstmt-20173} executed. select * from jb_permission where 1=1 
+  and  is_system_admin_default = 1 
+  and  is_menu = 1 
+  order by sort_rank asc
+[2020-06-11 15:22:04.395] DEBUG 134 statementLog - {conn-10001, pstmt-20174} executed. select id,name from jb_user
+[2020-06-11 15:22:36.310] DEBUG 134 statementLog - {conn-10001, pstmt-20175} executed. select id,name from jb_user
+[2020-06-11 15:22:36.320] DEBUG 134 statementLog - {conn-10001, pstmt-20176} executed. select *
+from jb_dictionary_type
+where type_key = 'group'
+limit 0, 1
+[2020-06-11 15:22:36.324] DEBUG 134 statementLog - {conn-10001, pstmt-20177} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 15:22:36.335] DEBUG 134 statementLog - {conn-10001, pstmt-20178} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 15:22:36.342] DEBUG 134 statementLog - {conn-10001, pstmt-20179} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc
+[2020-06-11 15:22:36.350] DEBUG 134 statementLog - {conn-10001, pstmt-20180} executed. select * from jb_dictionary where 1=1 
+  and  pid=  0 
+  and  type_id=  8 
+  order by sort_rank asc

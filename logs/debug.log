@@ -1,0 +1,533 @@
+[2020-06-11 10:51:19.551] DEBUG (org.jboss.logging.LoggerProviders.java:158) logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[2020-06-11 11:18:42.528] DEBUG (org.jboss.logging.LoggerProviders.java:158) logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[2020-06-11 11:19:43.692] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 1L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 11:19:43.855] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 2L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 11:19:43.902] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 3L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 11:19:43.943] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 4L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 11:19:43.980] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 5L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 11:19:44.019] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 6L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:05:00.862] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 7L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:05:00.936] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 8L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:05:00.993] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 9L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:05:01.032] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 10L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:05:01.071] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 11L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:10:12.122] DEBUG (org.jboss.logging.LoggerProviders.java:158) logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[2020-06-11 15:12:43.265] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 1L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:15:00.494] DEBUG (org.jboss.logging.LoggerProviders.java:158) logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[2020-06-11 15:16:12.050] DEBUG (org.jboss.logging.LoggerProviders.java:158) logProvider - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[2020-06-11 15:16:33.540] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 1L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:16:33.672] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 2L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:04.394] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 3L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:04.437] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 4L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:36.308] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 5L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:36.358] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 6L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:36.402] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 7L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:36.443] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 8L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:36.468] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 9L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+
+[2020-06-11 15:22:36.498] DEBUG (com.jfinal.proxy.ProxyGenerator.java:152) generate - 
+Generate proxy class "cn.jbolt._admin.updatemgr.JBoltVersionService$$EnhancerByJFinal":
+package cn.jbolt._admin.updatemgr;
+import com.jfinal.aop.Invocation;
+public class JBoltVersionService$$EnhancerByJFinal extends JBoltVersionService {
+	
+	public  com.jfinal.kit.Ret deleteByIds(java.lang.Integer p0, java.lang.Object[] p1) {
+		Invocation inv = new Invocation(this, 10L,
+			args -> {
+				return  JBoltVersionService$$EnhancerByJFinal.super.deleteByIds(
+						(java.lang.Integer)args[0],
+						(java.lang.Object[])args[1]
+					);
+				
+			}
+			, p0, p1);
+		
+		inv.invoke();
+		
+		return inv.getReturnValue();
+	}
+}
+
+

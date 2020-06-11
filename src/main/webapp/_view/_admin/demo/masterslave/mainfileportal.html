@@ -1,0 +1,43 @@
+<form onsubmit="return false;" class="form-inline d-none" id="jboltversion_JboltTableForm1_ajax_#(pageId)" action="demo/jbolttable/ajaxNoPage"  method="post"></form>
+<!-- JBoltTable -->
+<!-- JBoltTable的数据模板定义-->
+<script type="text/template" id="jboltTable_demotpl1_ajax_#(pageId)">
+{@each datas as data,index}
+<tr>
+{@if pageSize&&pageSize>0}
+<td>${((pageNumber-1)*pageSize)+(+index+1)}</td>
+{@else}
+<td>${+index+1}</td>
+{@/if}
+<td>${data.url}</td>
+<td>
+<a tooltip  title="编辑"  href="demo/jbolttable/edit/${data.id}" data-scroll="yes" data-handler="refreshJBoltTable" data-title="编辑" data-area="600,400" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a tooltip  title="删除"  href="demo/jbolttable/delete/${data.id}" data-handler="refreshJBoltTable" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+{@/each}
+</script>
+<div class="jbolt_table_toolbar" id="jbolt_table_toolbar_#(pageId)">
+<div class="btn-group" role="group" aria-label="btn-group">
+<button data-area="600,400" id="jboltTableAddBtn1_ajax_#(pageId)"  data-handler="jboltTablePageToFirst" data-title="新增版本" data-url="/demo/jbolttable/add" class="jbolt_table_addbtn btn btn-success btn-sm" ><i class="fa fa-plus"></i> 新增</button>
+</div>
+</div>
+	 <table class="jbolt_table table_striped thead_font_normal"
+	  data-fixed-columns-left="1,2"
+	  data-fixed-columns-right="7"
+	  data-height="fill_box"
+	  data-ajax="true"
+	  data-toolbar="jbolt_table_toolbar_#(pageId)"
+	  data-bind-elements="#jboltTableAddBtn1_ajax_#(pageId)"
+	  data-conditions-form="jboltversion_JboltTableForm1_ajax_#(pageId)"
+	  data-orign-url="demo/masterslave/mainFilesDatas/"
+	  data-url="demo/masterslave/mainFilesDatas/0"
+	  data-rowtpl="jboltTable_demotpl1_ajax_#(pageId)"
+	  data-page="jboltTablePage_ajax1_#(pageId)"
+	  data-pagesize="10"
+	 >
+<thead>
+<tr><th data-width="60" data-column="index">序号</th><th>URL</th><th data-width="80" data-nochange>操作</th></tr>
+</thead>
+<tbody></tbody>
+</table>

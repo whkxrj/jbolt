@@ -1,0 +1,48 @@
+#@adminLayout()
+#define main()
+<div class="jbolt_page" data-key="#(pmkey)">
+<div class="jbolt_page_title">
+	<h1>Demo-富文本编辑器演示</h1>
+</div>
+<div class="jbolt_page_content">
+<div class="row">
+<div class="col-12">
+<div class="card">
+<div class="card-header">富文本编辑器Demo</div>
+<div class="card-body">
+<div class="alert alert-danger" role="alert">
+请根据实际是否开启了多选项卡模式点击不同按钮案例
+</div>
+<a  class="btn btn-primary" data-pjax href="demo/htmleditor/summernote">summernote编辑器</a>
+<a  class="btn btn-success" data-pjax href="demo/htmleditor/multiSummernote">summernote编辑器-一个页面多实例</a>
+<a  class="ml-3 btn btn-info" data-title="Tab中的Summernote"   data-tabtrigger data-key="summernote_tabtrigger" href="demo/htmleditor/summernote">选项卡里打开</a>
+<a class="ml-3 btn btn-dark" data-dialogbtn data-area="80%,80%" data-title="Dialog中的富文本编辑器Demo" data-scroll="yes" href="demo/htmleditor/summernoteInDialog">点击打开Dialog</a>
+<a class="btn btn-danger" data-jboltlayertrigger href="demo/htmleditor/summernoteInJBoltLayer">点击打开JBoltLayer</a>
+<a class="btn btn-secondary" data-jboltlayertrigger data-width="70%" href="demo/htmleditor/summernoteMultiInJBoltLayer">JBoltLayer中多实例</a>
+<hr />
+<a  class="btn btn-primary" data-pjax href="demo/htmleditor/neditor">neditor编辑器</a>
+<a  class="btn btn-success" data-pjax href="demo/htmleditor/multiNeditor">neditor编辑器-一个页面多实例</a>
+<a  class="ml-3 btn btn-info" data-title="Tab中的neditor"   data-tabtrigger data-key="neditor_tabtrigger1" href="demo/htmleditor/neditor">选项卡里打开</a>
+<a  class="ml-3 btn btn-dark" data-title="Tab中的neditor"   data-tabtrigger data-key="neditor_tabtrigger2" href="demo/htmleditor/neditor">选项卡里打开</a>
+<a class="btn btn-danger" data-dialogbtn data-area="80%,80%" data-title="Dialog中的富文本编辑器Demo" data-scroll="yes" href="demo/htmleditor/neditorInDialog">点击打开Dialog</a>
+<a class="btn btn-warning" data-jboltlayertrigger href="demo/htmleditor/neditorInJBoltLayer">点击打开JBoltLayer</a>
+<a class="btn btn-secondary" data-jboltlayertrigger data-width="70%" href="demo/htmleditor/neditorMultiInJBoltLayer">JBoltLayer中多实例</a>
+<hr />
+<a  class="btn btn-danger" data-pjax href="demo/htmleditor/summerNeditor">Neditor和Summernote编辑器混合多实例</a>
+<a class="btn btn-secondary" data-jboltlayertrigger data-width="70%" href="demo/htmleditor/summerNeditorMultiInJBoltLayer">JBoltLayer中混合多实例</a>
+</div>
+</div>
+</div>
+ 
+</div>
+</div>
+</div>
+#end
+
+#define js()
+<script>
+
+$(function(){
+})
+</script>
+#end

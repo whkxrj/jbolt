@@ -1,0 +1,181 @@
+#@adminLayout()
+#define main()
+#set(pageId=RandomUtil.random(6))
+#set(JboltWithTabs=CACHE.getUserJBoltAdminWithTabs(session[SessionKey.ADMIN_USER_ID]))
+<div class="jbolt_page" data-key="#(pmkey)">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-auto">
+	<h1>商品管理</h1>
+	</div>
+	<div class="col text-center">
+		<form class="form-inline" id="mallgoodsForm_#(pageId)" action="admin/mall/goods" method="post">
+		<input type="hidden" name="bcategoryId" value="#(bcategoryId?? 0)"/>
+		<input type="hidden" name="fcategoryId" value="#(fcategoryId?? 0)"/>
+			<input type="hidden" name="isDelete" value="#(isDelete?? false)"/>
+			<input type="text" autocomplete="off"  class="form-control" style="width:130px"  placeholder="输入关键字搜索" name="keywords" value="#(keywords??)" />
+			<select class="form-control ml-1"  data-url="admin/mall/goods/onSaleOptions"  name="onSale" data-autoload data-text="=上下架=" data-value="" data-select="#(onSale??)"></select>
+			<select class="form-control ml-1"  data-url="admin/mall/goods/isHotOptions"  name="isHot" data-autoload data-text="=热销=" data-value="" data-select="#(isHot??)"></select>
+			<select class="form-control ml-1"  data-url="admin/mall/goods/isRecommendOptions"  name="isRecommend" data-autoload data-text="=推荐=" data-value="" data-select="#(isRecommend??)"></select>
+			<button  type="button"  onclick="normalData_#(pageId)()" class="btn btn-light" ><i class="fa fa-search"></i> 查询</button>
+			<button  type="button" onclick="trashData_#(pageId)()" class="btn btn-#((isDelete?? && isDelete=="true")?'danger':'light')" ><i class="fa fa-trash"></i> 回收站(#(deleteCount?? 0))</button>
+		</form>
+	</div>
+	<div class="col-auto">
+	<a #if(JboltWithTabs) data-tabtrigger #else data-pjax #end data-key="mall_goods_preadd" href="admin/mall/goods/preadd" data-title="添加新商品" class="pull-right btn btn-success mr-1" style="width:70px;" ><i class="fa fa-plus"></i> 添加</a>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<div class="row">
+<div class="col-sm-12  col-md-12 col-lg-4 col-xl-2">
+	<div class="card mb-3">
+		<div class="card-header">商品分类(后端)
+			<a href="javascript:void(0)" class="pull-right" tooltip data-title="刷新分类树" onclick="refreshGoodsBackCategory_#(pageId)()"><i class="fa fa-refresh"></i></a>
+		</div>
+		<div class="card-body overflow-auto p-2" style="min-height: 30vh">
+			<div id="goodsBackCategoryTree_goodsmgr_#(pageId)"
+			data-jstree
+			data-open-type="first_level"
+			data-read-url="admin/mall/goodsbackcategory/goodsFilterTree/"
+			data-change-handler="changeBackCategory_#(pageId)"
+			></div>
+		</div>
+	</div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-8  col-xl-10">
+
+<!-- JBoltTable的数据模板定义-->
+<script type="text/template" id="mallgoodsRowTpl_#(pageId)">
+{@each datas as data,index}
+<tr>
+{@if pageSize&&pageSize>0}
+<td>${((pageNumber-1)*pageSize)+(+index+1)}</td>
+{@else}
+<td>${+index+1}</td>
+{@/if}
+<td>
+<p class="text-wrap text-left overflow-auto" style="max-height: 80px;">${data.name}</p>
+</td>
+<td><img class="j_goodslist_mainimg"  data-photobtn tooltip data-title="点击查看大图"  src="${data.mainImage|real_image}" onerror="this.src='assets/img/uploadimg.png'"/></td>
+<td>
+<p class="text-wrap text-left text-danger overflow-auto" style="max-height: 80px;">[${data.subTitle?data.subTitle:'未设置'}]</p>
+</td>
+
+<td><div class="text-left"><span class="d-block text-primary">单价：</span><span class="d-block text-primary"><i class="fa fa-rmb mr-1"></i>${data.price?data.price:0}元</span><hr class="my-1"/><span class="d-block text-info">原价：</span><span class="d-block text-info"><i class="fa fa-rmb mr-1"></i>${data.originalPrice?data.originalPrice:0}元</span></div></td>
+<td><div class="text-left"><span class="d-block text-primary">真实：</span><span class="d-block text-primary">${data.realSaleCount?data.realSaleCount:0}${data.unitName}</span><hr class="my-1"/><span class="d-block text-info">营销：</span><span class="d-block text-info">${data.showSaleCount?data.showSaleCount:0}${data.unitName}</span></div></td>
+<td>
+<img data-switchbtn data-value="${data.onSale}" data-confirm="确认切换商品上下架状态？"  data-handler="refreshJBoltTable"  data-url="admin/mall/goods/toggleOnSale/${data.id}"/>
+</td>
+<td>
+<img data-switchbtn data-value="${data.isHot}" data-url="admin/mall/goods/toggleIsHot/${data.id}"/>
+</td>
+<td>
+<img data-switchbtn data-value="${data.isRecommend}"   data-url="admin/mall/goods/toggleIsRecommend/${data.id}"/>
+</td>
+<td>
+<div class="text-left">
+<span class="d-block text-primary mr-1" tooltip data-title="操作人：[${data.createUserName}]">创建:[<i class="fa fa-clock mr-1"></i>${data.createTime,'yyyy/MM/dd hh:mm'|date}]</span>
+<span class="d-block text-info mr-1" tooltip data-title="操作人：[${data.updateUserName}]">更新:[<i class="fa fa-clock mr-1"></i>${data.updateTime,'yyyy/MM/dd hh:mm'|date}]</span>
+{@if data.onSaleUserId}
+<span class="d-block text-success" tooltip data-title="操作人：[${data.underUserName}]">上架:[<i class="fa fa-clock mr-1"></i>${data.onSaleTime,'yyyy/MM/dd hh:mm'|date}]</span>
+{@else}
+<span class="d-block text-dark" tooltip data-title="未上架">上架:[<i class="fa fa-meh mr-1"></i>未上架]</span>
+{@/if}
+{@if data.underUserId}
+<span class="d-block text-danger" tooltip data-title="操作人：[${data.underUserName}] ">下架:[<i class="fa fa-clock mr-1"></i>${data.underTime,'yyyy/MM/dd hh:mm'|date}]</span>
+{@else}
+<span class="d-block text-dark" tooltip data-title="未操作">下架:[<i class="fa fa-meh-blank mr-1"></i>未操作]</span>
+{@/if}
+</div>
+</td>
+<td>
+{@if data.isDelete}
+<a  tooltip  title="还原"  href="admin/mall/goods/restore/${data.id}" data-handler="refreshJBoltTable" data-confirm="确定恢复此商品？(恢复后的商品移出回收站)" class="jbolt_table_delbtn"><i class="fa fa-mail-reply c-danger"></i></a>
+{@else}
+{@if!data.onSale}
+<a  tooltip  title="编辑" data-title="编辑商品[${data.id}]"  href="admin/mall/goods/edit/${data.id}"  #if(JboltWithTabs)  data-key="edit_goods_${data.id}" data-tabtrigger #else data-pjax #end  class="jbolt_table_btn"><i class="fa fa-pencil c-primary"></i></a>
+<a  tooltip  title="删除"  href="admin/mall/goods/delete/${data.id}" data-handler="refreshJBoltTable" data-confirm="确定删除此商品？(删除后的商品进入回收站)" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+{@/if}
+{@/if}
+</td>
+</tr>
+{@/each}
+</script>
+
+<table class="jbolt_table table_striped thead_font_normal table-center tbody_lh20" 
+data-jbolttable
+data-column-resize="true"
+data-height="fill"
+data-ajax="true"
+data-url="admin/mall/goods/datas"
+data-conditions-form="mallgoodsForm_#(pageId)"
+data-page="mallgoodsPage_#(pageId)"
+data-rowtpl="mallgoodsRowTpl_#(pageId)"
+data-fixed-columns-left="1,2"
+data-fixed-columns-right="11"
+>
+<thead>
+<tr><th data-width="70" data-column="index">序号</th><th data-width="300" data-nochange>商品</th><th data-width="120"  data-nochange>主图</th><th data-min-width="200">营销语</th><th data-width="120"  data-nochange>价格(元)</th><th  data-width="120"  data-nochange>销量</th><th  data-width="80"  data-nochange>上下架</th><th  data-width="80"  data-nochange>热销</th><th data-width="80"  data-nochange>推荐</th><th data-width="200"  data-nochange>时间</th><th  data-width="80"  data-nochange>操作</th></tr>
+</thead>
+<tbody>
+</tbody>
+</table>	
+
+</div>
+</div>
+
+
+</div>
+</div>
+#end
+#define js()
+<script type="text/javascript">
+var refreshJsGoodsBackCategory_#(pageId)=false;
+/**
+ * 商品管理 后台页面 JS
+ */
+var mallgoodsForm_#(pageId)=$("#mallgoodsForm_#(pageId)");
+/**
+ * 按分类查询
+ */
+function changeBackCategory_#(pageId)(tree,treeNode){
+	if(refreshJsGoodsBackCategory_#(pageId)==false){
+		mallgoodsForm_#(pageId).find("[name='bcategoryId']").val(treeNode.id);
+		mallgoodsForm_#(pageId).find("[name='bcategoryName']").val(treeNode.text);
+		mallgoodsForm_#(pageId).submit();
+	}
+	refreshJsGoodsBackCategory_#(pageId)=false;
+}
+/**
+ * 普通查询
+ */
+function normalData_#(pageId)(){
+	refreshJsGoodsBackCategory_#(pageId)=false;
+	mallgoodsForm_#(pageId).find("[name='isDelete']").val(false);
+	mallgoodsForm_#(pageId).submit();
+}
+/**
+ * 查回收站
+ */
+function trashData_#(pageId)(){
+	refreshJsGoodsBackCategory_#(pageId)=false;
+	mallgoodsForm_#(pageId).find("[name='isDelete']").val(true);
+	mallgoodsForm_#(pageId).submit();
+}
+
+var goodsBackCategoryTree_#(pageId)=$("#goodsBackCategoryTree_goodsmgr_#(pageId)");
+function refreshGoodsBackCategory_#(pageId)(){
+	refreshJsGoodsBackCategory_#(pageId)=true;
+	var backCategoryId=mallgoodsForm_#(pageId).find("input[name='bcategoryId']").val();
+	JSTreeUtil.refresh(goodsBackCategoryTree_#(pageId),backCategoryId?backCategoryId:0);
+}
+
+
+$(function(){
+	
+});
+  </script>
+  
+#end
+

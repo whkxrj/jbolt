@@ -1,0 +1,30 @@
+package #(targetPackageName);
+
+import java.util.List;
+import com.jfinal.kit.Kv;
+import com.jfinal.kit.Ret;
+import com.jfinal.plugin.activerecord.Db;
+import com.jfinal.plugin.activerecord.Page;
+import cn.jbolt.base.JBoltBaseService;
+import cn.jbolt.common.config.Msg;
+import #(modelImport);
+/**
+ * 
+ * @ClassName: #(serviceName??)   
+ * @author: #(author?? 'JBolt-Generator')
+ * @date: #date()  
+ */
+public class #(serviceName) extends JBoltBaseService<#(modelName)> {
+	private #(modelName) dao=new #(modelName)().dao();
+	@Override
+	protected #(modelName) dao() {
+		return dao;
+	}
+		
+#if(methods!=null&&methods.size()>0)
+	#for(method:methods)
+	#@genServiceMethod(method,modelName,mainLogicBean)
+	
+	#end
+#end
+}

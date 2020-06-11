@@ -1,0 +1,4 @@
+这个包下放置的都是生成器相关的东西
+JFinalModelGenerator-Model+BaseModel生成器，一键运行即可
+JBoltMainLogicGenerator-JBolt平台下的主业务逻辑代码生成器
+可以一键生成指定Model对应的模块分包、Controller、Service、html代码

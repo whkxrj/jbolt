@@ -1,0 +1,90 @@
+#[[#JBolt平台代码生成器 核心配置文件]]#
+
+#[[#数据源]]#
+#for(dataSource:jboltCodeGenConfig.dataSources)
+[#(dataSource.configName)]
+db_type = #(dataSource.dbType)
+jdbc_url = #(dataSource.jdbcUrl)
+user = #(dataSource.user)
+password = #(dataSource.password)
+
+#end
+
+
+#[[#默认配置]]#
+[ProjectConfig_default]
+#[[#项目类型]]#
+type=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.type)
+#[[#主包]]#
+mainPkg=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.mainPkg)
+#[[#model生成的包]]#
+modelPackageName=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.modelPackageName)
+#[[#basemodel生成的包]]#
+baseModelPackageName=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.baseModelPackageName)
+#[[#是否dao生成在Model中]]#
+generateDaoInModel=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.generateDaoInModel)
+#[[#是否支持链式setter]]#
+generateChainSetterInBaseModel=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.generateChainSetterInBaseModel)
+#[[#是否生成字典文件]]#
+generateDataDictionary=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.generateDataDictionary)
+#[[#字典文件名]]#
+dictionaryFileName=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.dictionaryFileName)
+#[[#MappingKit文件名]]#
+mappingKitFileName=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.mappingKitFileName)
+#[[#生成的Model 去掉前缀]]#
+removedTableNamePrefixes=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.removedTableNamePrefixes)
+#[[#生成时 char(1)转Boolean]]#
+charToBoolean=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.charToBoolean)
+#[[#baseModel继承JBoltBaseModel]]#
+baseModelExtendsJBoltBaseModel=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.baseModelExtendsJBoltBaseModel)
+#[[#model输出路径]]#
+modelOutputDir=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.modelOutputDir)
+#[[#base model输出路径]]#
+baseModelOutputDir=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.baseModelOutputDir)
+#[[#不需要生成的表名（全部小写） 一般都是一些数据库内置表什么的]]#
+filterTableNames=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.filterTableNames)
+#[[#表名中有包含以下字符串的需要过滤掉]]#
+tableNamesIndexOfStr=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.tableNamesIndexOfStr)
+#[[#表名符合的正则表达式]]#
+tableNamesPatterns=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.tableNamesPatterns)
+#[[#PermissionKey.java文件位置]]#
+permisskeyJavaFilePath=#(jboltCodeGenConfig.defaultCodeGenProjectConfig.permisskeyJavaFilePath)
+
+#[[#上次有效配置]]#
+[ProjectConfig_last]
+#[[#项目类型]]#
+type=#(jboltCodeGenConfig.lastCodeGenProjectConfig.type)
+#[[#主包]]#
+mainPkg=#(jboltCodeGenConfig.lastCodeGenProjectConfig.mainPkg)
+#[[#model生成的包]]#
+modelPackageName=#(jboltCodeGenConfig.lastCodeGenProjectConfig.modelPackageName)
+#[[#basemodel生成的包]]#
+baseModelPackageName=#(jboltCodeGenConfig.lastCodeGenProjectConfig.baseModelPackageName)
+#[[#是否dao生成在Model中]]#
+generateDaoInModel=#(jboltCodeGenConfig.lastCodeGenProjectConfig.generateDaoInModel)
+#[[#是否支持链式setter]]#
+generateChainSetterInBaseModel=#(jboltCodeGenConfig.lastCodeGenProjectConfig.generateChainSetterInBaseModel)
+#[[#是否生成字典文件]]#
+generateDataDictionary=#(jboltCodeGenConfig.lastCodeGenProjectConfig.generateDataDictionary)
+#[[#字典文件名]]#
+dictionaryFileName=#(jboltCodeGenConfig.lastCodeGenProjectConfig.dictionaryFileName)
+#[[#MappingKit文件名]]#
+mappingKitFileName=#(jboltCodeGenConfig.lastCodeGenProjectConfig.mappingKitFileName)
+#[[#生成的Model 去掉前缀]]#
+removedTableNamePrefixes=#(jboltCodeGenConfig.lastCodeGenProjectConfig.removedTableNamePrefixes)
+#[[#生成时 char(1)转Boolean]]#
+charToBoolean=#(jboltCodeGenConfig.lastCodeGenProjectConfig.charToBoolean)
+#[[#baseModel继承JBoltBaseModel]]#
+baseModelExtendsJBoltBaseModel=#(jboltCodeGenConfig.lastCodeGenProjectConfig.baseModelExtendsJBoltBaseModel)
+#[[#model输出路径]]#
+modelOutputDir=#(jboltCodeGenConfig.lastCodeGenProjectConfig.modelOutputDir)
+#[[#base model输出路径]]#
+baseModelOutputDir=#(jboltCodeGenConfig.lastCodeGenProjectConfig.baseModelOutputDir)
+#[[#不需要生成的表名（全部小写） 一般都是一些数据库内置表什么的]]#
+filterTableNames=#(jboltCodeGenConfig.lastCodeGenProjectConfig.filterTableNames)
+#[[#表名中有包含以下字符串的需要过滤掉]]#
+tableNamesIndexOfStr=#(jboltCodeGenConfig.lastCodeGenProjectConfig.tableNamesIndexOfStr)
+#[[#表名符合的正则表达式]]#
+tableNamesPatterns=#(jboltCodeGenConfig.lastCodeGenProjectConfig.tableNamesPatterns)
+#[[#PermissionKey.java文件位置]]#
+permisskeyJavaFilePath=#(jboltCodeGenConfig.lastCodeGenProjectConfig.permisskeyJavaFilePath)

@@ -1,0 +1,67 @@
+#@adminLayout()
+#define main()
+<div class="jbolt_page" data-key="#(pmkey)">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-9">
+	<h1>商品分类管理</h1>
+	</div>
+	<div class="col-3">
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+	<div class="row">
+		<div class="col-auto mb-3" style="width:400px;">
+		<div class="card">
+			<div class="card-header">商品分类树</div>
+			<div class="card-body overflow-auto" style="min-height:400px;">
+<div id="goodsBackCategoryTree"
+data-jstree
+data-target="portal"
+data-portalid="goodsBackCategoryPortal"
+data-curd="true"
+data-open-type="all"
+data-read-url="admin/mall/goodsbackcategory/mgrTree/"
+data-add-url="admin/mall/goodsbackcategory/add/"
+data-edit-url="admin/mall/goodsbackcategory/edit/"
+data-delete-url="admin/mall/goodsbackcategory/delete/"
+data-move-url="admin/mall/goodsbackcategory/move/"
+data-change-handler="portalEdit"				
+></div>
+			</div>
+		</div>
+		</div>
+		<div class="col-auto" style="width:400px;">
+		 #ajaxPortal("/admin/mall/goodsbackcategory/edit","goodsBackCategoryPortal",true)
+		</div>
+	</div>
+
+</div>
+</div>
+#end
+
+#define js()
+<script type="text/javascript">
+var goodsBackCategoryTree=$("#goodsBackCategoryTree");
+//提交表单
+function submitGoodsBackCategoryForm(){
+	var form=$("#goodsBackCategoryForm");
+	if(FormChecker.check(form)){
+		LayerMsgBox.loading("执行中...");
+		var formData=form.serialize();
+		var action=form.attr("action");
+		Ajax.post(action,formData,function(data){
+			LayerMsgBox.success("操作成功",500,function(){
+				JSTreeUtil.refresh(goodsBackCategoryTree,data.data);
+			});
+		});
+	}
+	
+}
+ 
+$(function(){
+});
+</script>
+#end
+

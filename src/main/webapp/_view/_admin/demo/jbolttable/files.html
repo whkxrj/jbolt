@@ -1,0 +1,46 @@
+#@adminDialogLayout()
+#define main()
+<div class="jbolt_page">
+<div class="jbolt_page_title">
+	<div class="row">
+	<div class="col-4">
+	<h1>升级文件管理</h1>
+	</div>
+	<div class="col-5">
+		<form class="form-inline" id="jboltversionfileForm" action="demo/jbolttable/files" method="get"></form>
+	</div>
+	<div class="col-3">
+	<button data-area="600,300" data-scroll="yes" data-handler="reloadCurrentPage" data-title="新增文件" data-url="/demo/jbolttable/addFile/#(jboltVersionId??)" class="pull-right jbolt_table_addbtn btn btn-success" ><i class="fa fa-plus"></i> 新增</button>
+	</div>
+	</div>
+</div>
+<div class="jbolt_page_content">
+<table class="table_striped thead_font_normal"
+data-jbolttable
+>
+<thead>
+<tr><th data-width="60" data-nochange>序号</th><th>URL</th><th data-width="100" data-nochange>操作</th></tr>
+</thead>
+<tbody>
+#for(data:files??)
+<tr>
+<td>#(for.count)</td>
+<td>#(data.url??)</td>
+<td>
+<a  tooltip  title="编辑"  href="demo/jbolttable/editFile/#(data.id)" data-scroll="yes" data-handler="reloadCurrentPage" data-title="编辑" data-area="600,300" class="jbolt_table_editbtn"><i class="fa fa-pencil c-primary"></i></a>
+<a  tooltip  title="删除"  href="demo/jbolttable/deleteFile/#(data.id)" data-handler="removeTr" class="jbolt_table_delbtn"><i class="fa fa-remove c-danger"></i></a>
+</td>
+</tr>
+#end
+</tbody>
+</table>	
+</div>
+</div>
+#end
+#define js()
+<script>
+$(function(){
+});
+</script>
+#end
+
